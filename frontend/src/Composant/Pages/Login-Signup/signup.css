@@ -1,0 +1,101 @@
+.signupPage{
+    background: url('/public/h.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.ContentForm{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3%;
+    width: 60%;
+    height: 550px;
+    margin-left: 250px;
+}
+.imgForm{
+    background-image: url('/public/gy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+.logosignup{
+    margin-top: -15px; 
+    width: 150px;
+    height: 100px;
+}
+.formsignup{
+    backdrop-filter: blur(15px) brightness(80%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+}
+.formsignup h1{
+  text-align: center;
+  font-size:bold ;
+  color: black;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+
+
+.inputbox {
+    margin-left: 60px;
+    position: relative;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    padding: 0 35px 0 5px; 
+    color: black(144, 6, 6); 
+    border-bottom: 1px solid black; 
+}
+
+.inputbox input::placeholder {
+    color: black; 
+    font-size: 1em;
+    font-style: italic;
+    transition: all 0.3s ease;
+}
+.inputbox input:focus::placeholder {
+    transform: translateY(-20px);
+    font-size: 0.8em;
+    color: black;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: black; 
+    font-size: 1.2em;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+
+.btn-Login {
+    background: transparent;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    margin-left: 60px;
+    width: 70%;
+    color: black;
+    font-family: Roboto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
+}
+.btn-Login:hover{
+    color: white;
+    background: linear-gradient(40deg, #b00404, #b22222, #dc143c, #ff6347);
+}

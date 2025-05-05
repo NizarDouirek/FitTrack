@@ -1,0 +1,100 @@
+.footer1{
+    background-color:rgb(17, 16, 16);
+    height: 450px;
+    padding: 60px;
+}
+.HeadFooter img{
+    height: 480px;
+    width: 700px;
+    margin-left: 30px;
+    margin-top: -130px; 
+}
+.HeadFooter{
+    background: url('/public/bgfoot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    width: 85%;
+    margin-left: 100px;
+    height: 350px;
+    /* margin-bottom: 100px; */
+    position: relative;
+    margin-top: 120px;
+}
+.contentHeadFooter{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+.lefthead{
+    color: white;
+}
+.lefthead .p1{
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+}
+.lefthead .p2{
+    background: linear-gradient(40deg, rgb(202, 182, 182),white,rgb(243, 194, 194), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+.lefthead button{
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+    padding:10px;
+    width: 190px;
+}
+.lefthead button:hover{
+    background-color: white;
+    color: black;
+}
+.sousfoot{
+    background-color: rgb(28, 27, 27);
+    color: white;
+    width: 100%;
+    height: 400px;   
+}
+.contentsousfoot{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 100px
+}
+.col1 p{
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+   
+}
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espace entre les icônes */
+    margin-top: 20px; /* Espace au-dessus des icônes */
+    margin-left: 60px;
+    
+}
+
+.social-icons .icon {
+    font-size:30px; /* Taille des icônes */
+    color: #4c4949; /* Couleur des icônes */
+    transition: color 0.3s ease; 
+}
+
+.social-icons .icon:hover {
+    color: white; 
+}
+
+.col2 a{
+    text-decoration: none;
+    color: white;
+}
