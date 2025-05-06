@@ -21,7 +21,7 @@ export default function Footer(){
             <div className="sousfoot">
                 <div className="contentsousfoot">
                     <div className="col1">
-                        <img style={{width:'180px',height:'120px'}} src="fit.png" alt="" />
+                        <img style={{width:'180px',height:'120px'}} src="/fit.png" alt="" />
                         <p> Votre parcours fitness commence ici <br />
                         Suivez vos progrès, atteignez vos objectifs</p>
                         <div className="social-icons">

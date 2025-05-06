@@ -37,7 +37,6 @@ export default function Header(){
                            <button className="cnx">Se connecter</button>
                            </Link>
                         </ul>
-                        
                       </nav>
                   </div>
                 </div>
