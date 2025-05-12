@@ -6,6 +6,7 @@ import Signup from './Composant/Pages/Login-Signup/signup';
 import Login from './Composant/Pages/Login-Signup/login';
 import Homme from './Composant/Pages/Homme/homme';
 import About from './Composant/Pages/About/about';
+import Contact from './Composant/Pages/Contact/contact';
 
 function App() {
    return(
@@ -13,8 +14,10 @@ function App() {
       <Routes>
           <Route path="/" element={ <Homme/>} />
           <Route path="/about" element={ <About/>} />
-        <Route path="/login" element={<Login />} /> 
-        <Route path="/signup" element={<Signup />} /> 
+          <Route path="/contact" element={ <Contact/>} />
+          <Route path="/login" element={<Login />} /> 
+          <Route path="/signup" element={<Signup />} /> 
+
 
           
       </Routes>

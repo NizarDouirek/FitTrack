@@ -1,0 +1,112 @@
+.contact {
+    height: 100vh;
+}
+
+.headerContact {
+    margin-top: -30px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.contentContact {
+    height: 258vh;
+    background-repeat: no-repeat;
+}
+
+.contact1 {
+    /* display: flex; */
+    height: 60vh;
+    background-image: url('/public/bgabout.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #080808;
+  color: #fff;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 40px;
+}
+
+
+
+.contact-info h2 {
+  font-size: 32px;
+  margin: 10px 0 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 25px;
+}
+.divIcon{
+    padding: 13px;
+    
+    border-radius: 50%;
+    background-color: #212121;
+}
+.divIcon:hover{
+    background-color: rgb(19, 19, 19);
+}
+.iconContact {
+  
+  font-size: 30px;
+color: #ff2600;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  background-color: #ff2600;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e0000092;
+}
+.map-container {
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 76, 0, 0.3);
+}
+.map-container iframe {
+  height: 500px;
+}
