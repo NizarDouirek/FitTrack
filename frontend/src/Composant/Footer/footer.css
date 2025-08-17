@@ -1,7 +1,8 @@
 .footer1{
-    background-color:rgb(17, 16, 16);
+    background-color:rgb(0, 0, 0);
     height: 450px;
     padding: 60px;
+    margin-top: 40px;
 }
 .HeadFooter img{
     height: 480px;
@@ -53,10 +54,11 @@
     padding:10px;
     width: 190px;
 }
-.lefthead button:hover{
-    background-color: white;
-    color: black;
+.lefthead button a{
+    color: white;
+    text-decoration: none;
 }
+
 .sousfoot{
     background-color: rgb(28, 27, 27);
     color: white;
@@ -65,9 +67,14 @@
 }
 .contentsousfoot{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
-    top: 100px
+    gap: 7rem;
+    top: 160px
+}
+.col1{
+    align-items: center;
+    text-align: center;
 }
 .col1 p{
     align-items: center;
@@ -79,17 +86,21 @@
 .social-icons {
     display: flex;
     gap: 15px; /* Espace entre les icônes */
-    margin-top: 20px; /* Espace au-dessus des icônes */
-    margin-left: 60px;
+    margin-top: 20px; 
+    text-align: center;
     
 }
 
 .social-icons .icon {
-    font-size:30px; /* Taille des icônes */
+    font-size:50px; /* Taille des icônes */
     color: #4c4949; /* Couleur des icônes */
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
+    text-align: center; 
 }
-
+.col1 img{
+    width: 200px;
+    height: 130px;
+}
 .social-icons .icon:hover {
     color: white; 
 }
@@ -97,4 +108,29 @@
 .col2 a{
     text-decoration: none;
     color: white;
+}
+.col2 h1, .col3 h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.col2 a, .col3 a {
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.col2 a:hover, .col3 a:hover {
+    color: rgb(245, 87, 87);
+}
+
+.col3 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.col3 li {
+    margin-bottom: 10px;
 }

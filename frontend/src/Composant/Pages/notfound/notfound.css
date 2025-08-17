@@ -1,0 +1,48 @@
+.notfound{
+    background: url('/public/bg2.jpeg');
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.titreNot{
+    color: white;
+    font-size: 40px;
+     font-family: 'Courier New', Courier, monospace;
+}
+.t404{
+    font-size: 140px;
+    color: white;
+    
+}
+.home-btn {
+  display: inline-block;
+  background-color: #020202; /* rouge vif */
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 12px 17px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Survol */
+.home-btn:hover {
+  background-color: white;
+  color: red;
+  transform: scale(1.01);
+  box-shadow: 0px 6px 14px rgba(208, 193, 193, 0.4);
+}
+
+/* Clic */
+.home-btn:active {
+  transform: scale(0.96);
+}

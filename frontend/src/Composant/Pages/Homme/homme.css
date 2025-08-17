@@ -22,8 +22,70 @@ body, html, #root, .homme {
 .rightcontent{
     margin-left: 500px;
     margin-top: 5%;
-    width: 40%;
+    width: 50%;
 }
+.btnshowmore{
+  margin-top: 50px;
+  text-align: center;
+}
+:root{
+  --red: #f20612;      /* rouge principal */
+  --red-dark: #b40810; /* rouge au survol */
+  --white: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  font: 600 18px/1.1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  padding: 10px;
+  border-radius: 999px;            /* pill */
+  text-decoration: none;
+  
+  transition: transform .12s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+  cursor: pointer;
+}
+
+/* Variante principale : fond rouge, texte blanc */
+.showmore {
+  background: var(--red);
+  color: var(--white);
+  text-align: center;
+  border: 2px solid var(--red);
+  box-shadow: 0 6px 18px rgba(229, 9, 20, 0.25);
+}
+.showmore:hover {
+  background: var(--red-dark);
+  border-color: var(--red-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(229, 9, 20, 0.35);
+}
+.showmore:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.25);
+}
+.showmore:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.9), 0 0 0 6px rgba(229, 9, 20, .7);
+}
+
+/* Variante “outline” (facultatif) : blanc avec contour rouge */
+.showmore.outline {
+  background: var(--white);
+  color: var(--red);
+  border-color: var(--red);
+  box-shadow: none;
+}
+.showmore.outline:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* Désactivé (si besoin) */
+.showmore[aria-disabled="true"] {
+  opacity: .6;
+  pointer-events: none;
+}
+
 .contenthomme{
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -34,7 +96,7 @@ body, html, #root, .homme {
 }
 .contenthomme span{
     color: red;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-shadow: 0px 2px 5px rgb(234, 228, 228);
 }
 .buttonhomme a{
@@ -61,7 +123,7 @@ body, html, #root, .homme {
 }
 .pn{
     background-color: black;
-    padding: 80px;
+    padding: 120px;
 }
 .titre-pn{
     color: white;
@@ -77,6 +139,13 @@ body, html, #root, .homme {
     display: flex;
     gap: 3.5rem;
     justify-content: center;
+}
+.inscrit-button a {
+  text-decoration: none;
+  color: white;
+}
+.inscrit-button:hover a{
+  color: red;
 }
 .content-pn{
     overflow: hidden;
@@ -256,7 +325,7 @@ body, html, #root, .homme {
 .inscrit-button:hover {
     background-color: white;
     color: red;
-    border: white;
+    border: 2px solid white;
 }
 .pageImgs {
   background-color:rgb(17, 16, 16) ;

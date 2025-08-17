@@ -29,9 +29,19 @@ export default function Header(){
                       <nav>
                         <ul>
                           
-                           <li><Link to="/homme">Accueil</Link></li>
+                           <li><Link to="/home">Accueil</Link></li>
                            <li><Link to="/about">À propos</Link></li>
-                           <li><Link to="/Fonctionnalités">Fonctionnalités</Link></li>
+                    <li className="dropdown">
+  <Link to="/Fonctionnalités" className="dropbtn">
+    Fonctionnalités <span className="arrow">▼</span>
+  </Link> <div className="dropdown-content">
+            <Link to="/faq">FAQ</Link>
+            <Link to="/calculateur">Calculateur</Link>
+            <Link to="/galerie">Galerie</Link>
+            <Link to="/notfound">NotFound</Link>
+          </div>
+        </li>
+                           <li><Link to="/Blog">Blog</Link></li>
                            <li><Link to="/contact">Contact</Link></li>
                            <Link to='/login'>
                            <button className="cnx">Se connecter</button>

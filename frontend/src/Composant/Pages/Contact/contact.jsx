@@ -1,6 +1,7 @@
 import React from "react";
 import './contact.css';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Footer from "../../Footer/footer";
 import Header from "../../Header/header";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
@@ -31,12 +32,14 @@ export default function Contact(){
         
               <div className="contentContact">
                 <div className="contact1">
-                  <div className="leftCo">
-                    <p className="p1">Contact</p>
-                    <p className="p2">
-                      <span style={{ color: 'red' }}>Accueil</span> / Contact
-                    </p>
-                  </div>
+                   
+                    <div className="leftCo">
+                      <p className="p1">Contact</p>
+                      <p className="p2">
+                        <Link to="/home" className="accueil-link">Accueil</Link> / Contact
+                      </p>
+                    </div>
+                  
                   
                 </div>
                   <div className="contact-section">

@@ -23,6 +23,7 @@
 }
 .contact-section {
   display: flex;
+  margin-top: 60px;
   justify-content: space-between;
   background-color: #080808;
   color: #fff;

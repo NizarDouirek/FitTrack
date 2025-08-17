@@ -11,7 +11,7 @@ export default function Signup(){
            
             <form action="" className="formsignup">
             <img className="logosignup" src="fit.png" alt="" />  
-                <h1>S'inscrire</h1><br />
+                <h1>S'inscrire</h1>
                
               
                 <div className="inputbox">

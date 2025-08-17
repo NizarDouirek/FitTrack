@@ -3,6 +3,7 @@ import "./homme.css";
 import data from "./data";
 import Header from "../../Header/header";
 import Footer from "../../Footer/footer";
+import Pricing2 from "../../../page/pricing/pricing";
 export default function Homme() {
   return (
     <>
@@ -19,7 +20,7 @@ export default function Homme() {
             <br />
 
             <button className="buttonhomme">
-              <a href="#contact">Contactez-Nous</a>
+              <a href="/contact">Contactez-Nous</a>
             </button>
           </div>
         </div>
@@ -60,10 +61,14 @@ export default function Homme() {
             <p>Un accompagnement personnalisé pour répondre à vos attentes.</p>
           </div>
         </div>
+        
+             <div class="btnshowmore">
+  <a href="/about" class="btn showmore">Qui nous sommes ▼</a>
+</div>
       </div>
 
       <div className="classes-section">
-        <h2 className="section-title">Nos Service</h2>
+        <h2 className="section-title">Nos Services</h2>
         <h3 className="section-subtitle">CE QUE NOUS POUVONS OFFRIR</h3>
         <div className="classes-grid">
           {data.map((item) => (
@@ -105,21 +110,11 @@ export default function Homme() {
         </div>
       </div>
       <div className="inscrit">
-          <h1 className="titreIns">inscrivez-vous dès maintenant pour bénéficier de plus d'offres</h1>
+          <h1 className="titreIns">Contactez-nous dès maintenant pour bénéficier de plus d'offres</h1>
           <p>Là où santé, beauté et fitness se rencontrent.</p>
-          <button className="inscrit-button">Rendez-vous</button>
+          <button className="inscrit-button"><a href="/contact">Contactez Nous</a></button>
         </div>
-        <section className="pageImgs">
-          <div className="imgssites">
-               <img src="i1.jpg" alt="" />
-               <img src="i2.jpg" alt="" />
-               <img src="lefting.jpg" alt="" />
-               <img src="i7.jpg" alt="" />
-               <img src="i8.avif" alt="" />
-               <img src="i3.jpg" alt="" />
-               <img src="i5.jpg" alt="" />
-          </div>
-        </section>
+        <Pricing2/>
         <Footer/>
         </div>
    
