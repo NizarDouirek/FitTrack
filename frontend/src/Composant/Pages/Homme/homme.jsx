@@ -4,6 +4,8 @@ import data from "./data";
 import Header from "../../Header/header";
 import Footer from "../../Footer/footer";
 import Pricing2 from "../../../page/pricing/pricing";
+import Testimonials from "../Avis/avis";
+import { Link } from "react-router-dom";
 export default function Homme() {
   return (
     <>
@@ -79,7 +81,7 @@ export default function Homme() {
                   <span className="class-category">{item.category}</span>
                   <h3 className="class-title">{item.title}</h3>
                 </div>
-                <button className="class-button">➔</button>
+                <Link to={item.link}><button className="class-button">➔</button></Link>
               </div>
             </div>
           ))}
@@ -115,6 +117,7 @@ export default function Homme() {
           <button className="inscrit-button"><a href="/contact">Contactez Nous</a></button>
         </div>
         <Pricing2/>
+        <Testimonials/>
         <Footer/>
         </div>
    

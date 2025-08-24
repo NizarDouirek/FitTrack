@@ -32,11 +32,11 @@ export default function Header(){
                            <li><Link to="/home">Accueil</Link></li>
                            <li><Link to="/about">À propos</Link></li>
                     <li className="dropdown">
-  <Link to="/Fonctionnalités" className="dropbtn">
+  <Link to="/home" className="dropbtn"  onClick={(e) => e.preventDefault()}>
     Fonctionnalités <span className="arrow">▼</span>
   </Link> <div className="dropdown-content">
             <Link to="/faq">FAQ</Link>
-            <Link to="/calculateur">Calculateur</Link>
+            <Link to="/bmi">BMI Calculateur</Link>
             <Link to="/galerie">Galerie</Link>
             <Link to="/notfound">NotFound</Link>
           </div>

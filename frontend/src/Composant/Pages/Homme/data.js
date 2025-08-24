@@ -4,18 +4,21 @@ const data = [
         category: "FORCE",
         title: "Haltérophilie ",
         image: "lefting.jpg",
+          link: "/force"
       },
       {
         id: 2,
-        category: "CARDIO",
-        title: "CYCLISME EN SALLE",
+        category: "Endurance",
+        title: "CARDIO",
         image: "cardio.jpg",
+          link: "/Cardio"
       },
       {
         id: 3,
-        category: "FORCE",
-        title: "PUISSANCE KETTLEBELL",
+        category: "Nutrition & Coaching",
+        title: "Plans alimentaires personnalisés",
         image: "force.jpg",
+          link: "/nutrition"
       },
   ];
   export default data;

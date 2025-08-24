@@ -51,21 +51,21 @@ export default function Contact(){
             <div className="divIcon">
           <FaMapMarkerAlt className="iconContact" />
           </div>
-          <p>333 Middle Winchendon Rd, Rindge, NH 03461</p>
+          <p>Rue Abou Rakrak, Quartier Maârif Casablanca, Maroc</p>
         </div>
 
         <div className="info-item">
               <div className="divIcon">
           <FaPhoneAlt  className="iconContact" />
           </div>
-          <p>125-711-811 &nbsp; | &nbsp; 125-668-886</p>
+          <p>+212 783692373</p>
         </div>
 
         <div className="info-item">
               <div className="divIcon">
           <FaEnvelope className="iconContact" />
           </div>
-          <p>FitTrack@gmail.com</p>
+          <p>Fittrack@gmail.com | contact@Fittrack.com</p>
         </div>
       </div>
 

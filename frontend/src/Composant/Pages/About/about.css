@@ -28,6 +28,9 @@ body {
   margin-left: 50px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
+.about-img{
+  border-radius: 30%;
+}
 .leftAb{
     width: 800px;
 }

@@ -26,7 +26,7 @@ export default function Galerie(){
     <div className="div2"><img loading="lazy" src="w2.jpg" alt="" /></div>
     <div className="div3"><img loading="lazy" src="lefting.jpg" alt="" /></div>
     <div className="div4"><img loading="lazy" src="i5.jpg" alt="" /></div>
-    <div className="div5"><img loading="lazy" src="i8.avif" alt="" /></div>
+    <div className="div5"><img loading="lazy" src="ins.jpg" alt="" /></div>
     <div className="div6"><img loading="lazy" src="i7.jpg" alt="" /></div>
     <div className="div7"><img loading="lazy" src="i1.jpg" alt="" /></div>
     <div className="div8"><img loading="lazy" src="boxe.jpg" alt="" /></div>

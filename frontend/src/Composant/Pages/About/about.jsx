@@ -3,6 +3,7 @@ import './about.css';
 import Header from "../../Header/header";
 import { Link } from "react-router-dom";
 import Footer from "../../Footer/footer";
+import Testimonials from "../Avis/avis";
 
 export default function About() {
   return (
@@ -101,7 +102,7 @@ Notre mission est de vous aider à atteindre vos objectifs de santé grâce à u
     </div>
   </div>
 
-  <img className="about-img" src="about.jpg" alt="FitTrack Mission" />
+  <img className="about-img" src="ntr.jpg" alt="FitTrack Mission" />
 </div>
 
         
@@ -135,6 +136,7 @@ Notre mission est de vous aider à atteindre vos objectifs de santé grâce à u
             <p>Un accompagnement personnalisé pour répondre à vos attentes.</p>
           </div>
         </div>
+        <Testimonials/>
         <Footer/>
       </div>
        
