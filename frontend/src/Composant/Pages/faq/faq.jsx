@@ -74,7 +74,7 @@ export default function FAQGym() {
           {/* Image à gauche */}
           <div className="faq-image">
             <img
-              src="faq.jpg"
+              src="faq.webp"
               alt="Séance d’entraînement en salle de sport"
             />
             <div className="faq-image-caption">

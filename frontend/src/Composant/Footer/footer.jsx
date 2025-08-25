@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="footer1">
         <div className="HeadFooter">
           <div className="contentHeadFooter">
-            <img src="fooo.png" alt="" />
+            <img src="fooo.webp" alt="" />
             <div className="lefthead">
               <p className="p1">Prêt à commencer ?</p>
               <p className="p2">
@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="sousfoot">
         <div className="contentsousfoot">
           <div className="col1">
-            <img src="fit track (2).png" alt="logo" />
+            <img src="logoHe.webp" alt="logo" />
             <p>
               Votre parcours fitness commence
               <br /> ici. Suivez vos progrès, atteignez vos objectifs

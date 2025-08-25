@@ -24,7 +24,7 @@ export default function About() {
 
         <div className="about2">
           <div className="titreAbout2">
-            <img className="fleche" src="fleche.png" alt="Flèche" />
+            <img className="fleche" src="fleche.webp" alt="Flèche" />
             <div>
               <h1>À propos de FitTrack, Votre parcours fitness commence ici</h1>
               <p>
@@ -41,7 +41,7 @@ export default function About() {
   <h2 className="section-titleA">Qui sommes-nous ?</h2>
 <div className="headAbout">
   
-  <img className="img11bout" src="aboutA.png" alt="" />
+  <img className="img11bout" src="aboutA.webp" alt="" />
   <div className="leftAb">
     <h2>Notre ADN, votre bien-être!</h2>
     <p>
@@ -102,7 +102,7 @@ Notre mission est de vous aider à atteindre vos objectifs de santé grâce à u
     </div>
   </div>
 
-  <img className="about-img" src="ntr.jpg" alt="FitTrack Mission" />
+  <img className="about-img" src="ntr.webp" alt="FitTrack Mission" />
 </div>
 
         
@@ -113,25 +113,25 @@ Notre mission est de vous aider à atteindre vos objectifs de santé grâce à u
         <div className="pourquoi-nous" style={{marginBottom:'100px'}}>
           
           <div className="content-pn">
-            <img src="modern.png" alt="Équipements modernes" />
+            <img src="modern.webp" alt="Équipements modernes" />
             <h3>Équipements modernes</h3>
             <p>Des machines de dernière génération pour optimiser vos performances.</p>
           </div>
 
           <div className="content-pn">
-            <img src="nutrition.png" alt="Plan de nutrition sain" />
+            <img src="nutrition.webp" alt="Plan de nutrition sain" />
             <h3>Plan de nutrition sain</h3>
             <p>Un programme nutritionnel adapté pour atteindre vos objectifs.</p>
           </div>
 
           <div className="content-pn">
-            <img src="plan.png" alt="Plan d'entraînement" />
+            <img src="plan.webp" alt="Plan d'entraînement" />
             <h3>Plan d'entraînement professionnel</h3>
             <p>Des entraînements sur mesure guidés par des experts.</p>
           </div>
 
           <div className="content-pn">
-            <img src="personnel (2).png" alt="Accompagnement personnalisé" />
+            <img src="personnel (2).webp" alt="Accompagnement personnalisé" />
             <h3>Adapté à vos besoins uniques</h3>
             <p>Un accompagnement personnalisé pour répondre à vos attentes.</p>
           </div>

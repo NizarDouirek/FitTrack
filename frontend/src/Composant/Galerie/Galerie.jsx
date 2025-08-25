@@ -22,15 +22,15 @@ export default function Galerie(){
                 <h2 className="section-titleG"> Explorez FitTrack en images !</h2>
                
 <div className="parent">
-    <div className="div1"><img loading="lazy" src="w3.jpg" alt="" /></div>
-    <div className="div2"><img loading="lazy" src="w2.jpg" alt="" /></div>
-    <div className="div3"><img loading="lazy" src="lefting.jpg" alt="" /></div>
-    <div className="div4"><img loading="lazy" src="i5.jpg" alt="" /></div>
-    <div className="div5"><img loading="lazy" src="ins.jpg" alt="" /></div>
-    <div className="div6"><img loading="lazy" src="i7.jpg" alt="" /></div>
-    <div className="div7"><img loading="lazy" src="i1.jpg" alt="" /></div>
-    <div className="div8"><img loading="lazy" src="boxe.jpg" alt="" /></div>
-    <div className="div9"><img loading="lazy" src="w1.jpg" alt="" /></div>
+    <div className="div1"><img loading="lazy" src="w3.webp" alt="" /></div>
+    <div className="div2"><img loading="lazy" src="w2.webp" alt="" /></div>
+    <div className="div3"><img loading="lazy" src="lefting.webp" alt="" /></div>
+    <div className="div4"><img loading="lazy" src="i5.webp" alt="" /></div>
+    <div className="div5"><img loading="lazy" src="ins.webp" alt="" /></div>
+    <div className="div6"><img loading="lazy" src="i7.webp" alt="" /></div>
+    <div className="div7"><img loading="lazy" src="i1.webp" alt="" /></div>
+    <div className="div8"><img loading="lazy" src="boxe.webp" alt="" /></div>
+    <div className="div9"><img loading="lazy" src="w1.webp" alt="" /></div>
 </div>
     <Footer/>
             </div>

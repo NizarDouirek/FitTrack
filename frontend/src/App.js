@@ -14,10 +14,12 @@ import BMICalculator from './Composant/Pages/Bmi/bmi';
 import ForcePage from './Composant/Pages/DetailService/Force/force';
 import CardioPage from './Composant/Pages/DetailService/Cardio/cardio';
 import NutritionPage from './Composant/Pages/DetailService/nutrution/nutrution';
+import ScrollToTop from './Composant/scrolltop/scrolltop';
 
 function App() {
    return(
       <Router>
+         <ScrollToTop/>
       <Routes>
           <Route path="/" element={ <Homme/>} />
           <Route path="/home" element={ <Homme/>} />

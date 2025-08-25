@@ -12,7 +12,7 @@ export default function ForcePage() {
         {/* Hero Section */}
         <div className="force-hero">
           <img
-            src="forcehero.jpg"
+            src="forcehero.webp"
             alt="Athlète haltérophilie"
           />
           <div className="force-hero-text">

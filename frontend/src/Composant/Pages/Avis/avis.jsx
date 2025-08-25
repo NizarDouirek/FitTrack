@@ -66,7 +66,7 @@ export default function Testimonials() {
           <div className="testimonial-slide">
             <div className="testimonial-image">
               <img
-                src="client3.jpg"
+                src="client3.webp"
                 alt="Femme faisant du fitness avec des haltères"
                 style={{
                   width: "100%",
@@ -103,7 +103,7 @@ export default function Testimonials() {
           <div className="testimonial-slide">
             <div className="testimonial-image">
               <img
-                src="client5.jpg"
+                src="client5.webp"
                 alt="femme faisant de la musculation en salle de sport"
                 style={{
                   width: "100%",
@@ -138,7 +138,7 @@ export default function Testimonials() {
           <div className="testimonial-slide">
             <div className="testimonial-image">
               <img
-                src="client2.jpg" alt="femme faisant de la musculation en salle de sport"
+                src="client2.webp" alt="femme faisant de la musculation en salle de sport"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -172,7 +172,7 @@ export default function Testimonials() {
           <div className="testimonial-slide">
             <div className="testimonial-image">
               <img
-                src="client4.jpg"
+                src="client4.webp"
                 alt="Homme faisant de la musculation en salle de sport"
                 style={{
                   width: "100%",
@@ -209,7 +209,7 @@ export default function Testimonials() {
           <div className="testimonial-slide">
             <div className="testimonial-image">
               <img
-                src="client6.jpg"
+                src="client6.webp"
                 alt="Femme pratiquant le yoga et la méditation"
                 style={{
                   width: "100%",

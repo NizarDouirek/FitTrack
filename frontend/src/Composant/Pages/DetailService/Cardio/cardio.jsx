@@ -11,7 +11,7 @@ export default function CardioPage() {
         {/* Hero Section */}
         <div className="cardio-hero">
           <img
-            src="cardiopage.jpg"
+            src="cardiopage.webp"
             alt="Cyclisme en salle"
           />
           <div className="cardio-hero-text">

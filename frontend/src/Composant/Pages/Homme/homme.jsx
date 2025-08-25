@@ -34,7 +34,7 @@ export default function Homme() {
         </div>
         <div className="pourquoi-nous">
           <div className="content-pn">
-            <img src="modern.png" alt="" />
+            <img src="modern.webp" alt="" />
             <h3>Équipements modernes</h3>
             <br />
             <p>
@@ -43,7 +43,7 @@ export default function Homme() {
             </p>
           </div>
           <div className="content-pn">
-            <img src="nutrition.png" alt="" />
+            <img src="nutrition.webp" alt="" />
             <h3>Plan de nutrition sain</h3>
             <br />
             <p>
@@ -51,13 +51,13 @@ export default function Homme() {
             </p>
           </div>
           <div className="content-pn">
-            <img src="plan.png" alt="" />
+            <img src="plan.webp" alt="" />
             <h3>Plan d'entraînement professionnel</h3>
             <br />
             <p>Des entraînements sur mesure guidés par des experts.</p>
           </div>
           <div className="content-pn">
-            <img src="personnel (2).png" alt="" />
+            <img src="personnel (2).webp" alt="" />
             <h3>Adapté à vos besoins uniques</h3>
             <br />
             <p>Un accompagnement personnalisé pour répondre à vos attentes.</p>
@@ -90,7 +90,7 @@ export default function Homme() {
         <br />
         <div className="classes-grid">
           <div className="class-card2">
-            <img src="yoga.jpg" className="class-image2" />
+            <img src="yoga.webp" className="class-image2" />
             <div className="class-content">
               <div>
                 <span className="class-category2">Flexibilité</span>
@@ -100,7 +100,7 @@ export default function Homme() {
             </div>
           </div>
           <div className="class-card2">
-            <img src="boxe.jpg" className="class-image2" />
+            <img src="boxe.webp" className="class-image2" />
             <div className="class-content">
               <div>
                 <span className="class-category2">Sports de combat</span>

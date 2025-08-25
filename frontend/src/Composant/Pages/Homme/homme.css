@@ -1,5 +1,5 @@
 .homme{
-   background-image: url('/public/hero-1.jpg');
+   background-image: url('/public/hero-1.webp');
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover; 
@@ -282,7 +282,7 @@ body, html, #root, .homme {
     color: wheat;
   }
 .inscrit{
-    background:url('/public/ins.jpg');
+    background:url('/public/ins.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

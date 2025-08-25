@@ -23,7 +23,7 @@ export default function Header(){
         <div>
             <header  className={isScrolled ? "scrolled" : ""}>
                 <div className="logo">
-                  <img src="fit track (2).png"/>
+                  <img src="logoHe.webp"/>
                   {/* <h1>Fit<span style={{color:"red"}}>Track</span></h1> */}
                   <div className="navbar">
                       <nav>

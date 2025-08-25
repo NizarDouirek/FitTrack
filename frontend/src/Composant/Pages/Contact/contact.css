@@ -16,7 +16,7 @@
 .contact1 {
     /* display: flex; */
     height: 60vh;
-    background-image: url('/public/bgabout.jpg');
+    background-image: url('/public/bgabout.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;

@@ -3,21 +3,21 @@ const data = [
         id: 1,
         category: "FORCE",
         title: "Haltérophilie ",
-        image: "lefting.jpg",
+        image: "lefting.webp",
           link: "/force"
       },
       {
         id: 2,
         category: "Endurance",
         title: "CARDIO",
-        image: "cardio.jpg",
+        image: "cardio.webp",
           link: "/Cardio"
       },
       {
         id: 3,
         category: "Nutrition & Coaching",
         title: "Plans alimentaires personnalisés",
-        image: "force.jpg",
+        image: "force.webp",
           link: "/nutrition"
       },
   ];
