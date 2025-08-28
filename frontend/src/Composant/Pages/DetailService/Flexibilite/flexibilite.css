@@ -1,0 +1,122 @@
+.flexibilite-container {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(180deg, #000, #0e0d0d);
+  padding-bottom: 50px;
+}
+
+/* Hero */
+.flexibilite-hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+.flexibilite-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+.flexibilite-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.flexibilite-hero-text h1 {
+  font-size: 3rem;
+   font-family: 'Courier New', Courier, monospace;
+  color: #e60000;
+}
+.flexibilite-hero-text p {
+  font-size: 1.5rem;
+}
+
+/* Sections */
+.flexibilite-section {
+  margin-top: 40px;
+  padding: 60px;
+  /* text-align: center; */
+}
+.flexibilite-section h2 {
+  color: #e60000;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.flexibilite-section p {
+  font-family: 'Montserrat', sans-serif;
+
+}
+.p1flexibilite{
+    font-size: 1.3rem;
+}
+.p2flexibilite{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Avantages en cartes */
+.cards-container {
+  display: flex;
+  gap: 20px;
+}
+.cardflexibilite {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+ font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+.cardflexibilite:hover {
+  box-shadow: 0 0 15px rgba(213, 206, 206, 0.3);
+  transform: translateY(-10px);
+}
+
+/* Nutrition Highlight */
+.highlight {
+  background: rgb(18, 18, 18);
+}
+
+/* Vidéo */
+.video iframe {
+  border-radius: 15px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  margin-top: 40px;
+}
+.cta button {
+  background: white;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cta button:hover {
+  background: #e60000;
+  color: #fff;
+}
+
+/* Animation fade-in */
+.fade-inflexibilite {
+  animation: fadeIn 1.5s ease-in;
+}
+.fade-inflexibilite li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

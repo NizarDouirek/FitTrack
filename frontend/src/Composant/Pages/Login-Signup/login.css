@@ -27,10 +27,11 @@
     width: 50%;
 }
 .logoForm{
-    margin-top: -15px;
-    margin-left: 280px;
+    margin-top: -20px;
+    margin-left: 260px;
     width: 150px;
     height: 100px;
+    user-select: none; 
 }
 .formLogin{
     

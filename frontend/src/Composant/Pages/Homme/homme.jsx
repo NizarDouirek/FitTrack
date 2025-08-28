@@ -27,6 +27,72 @@ export default function Homme() {
           </div>
         </div>
       </div>
+       <section className="about-section2">
+      {/* Background Pattern */}
+      <div className="bg-pattern">
+        <div className="circle-red"></div>
+        <div className="circle-gray"></div>
+        <div className="circle-blur"></div>
+      </div>
+
+      <div className="containerAbout2">
+        {/* Header */}
+        <div className="header animate-fadeInUp">
+          <h2>
+            À Propos de <span className="gradient-text2">FitTrack</span>
+          </h2>
+          <p>
+            Votre partenaire ultime pour atteindre vos objectifs de fitness et
+            transformer votre vie
+          </p>
+        </div>
+
+        {/* Grid Content */}
+        <div className="gridAbout">
+          {/* Left Content */}
+          <div className="left animate-slideInLeft">
+            <h3>Qui nous sommes!</h3>
+            <p>
+              FitTrack est une plateforme innovante dédiée à la nutrition intelligente, à la forme physique et au bien-être. Notre mission est de vous aider à atteindre vos objectifs de santé grâce à un suivi simple, précis et motivant de vos apports nutritionnels et de vos habitudes alimentaires.
+
+
+  </p>
+            <p>
+              Que vous soyez débutant ou athlète confirmé, FitTrack s'adapte à
+              votre niveau et vous accompagne dans chaque étape de votre parcours
+              fitness.
+            </p>
+
+            {/* Stats */}
+            <div className="stats2">
+              <div>
+                <div className="number2">50K+</div>
+                <div className="label2">Utilisateurs Actifs</div>
+              </div>
+              <div>
+                <div className="number2">1M+</div>
+                <div className="label2">Séances Complétées</div>
+              </div>
+              <div>
+                <div className="number2">95%</div>
+                <div className="label2">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content (SVG motivant) */}
+          <div className="right animate-slideInRight">
+            <div className="visual2">
+             <img width='550px' height='300px' src="jj.jpg" alt="" />
+              <div className="motiv-text">
+                <h4>Devenez Votre Meilleure Version</h4>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
       <div className="pn">
         <div className="titre-pn">
           <h4>Pourquoi nous choisir ?</h4>
@@ -96,7 +162,7 @@ export default function Homme() {
                 <span className="class-category2">Flexibilité</span>
                 <h3 className="class-title">Yoga - Étirements</h3>
               </div>
-              <button className="class-button">➔</button>
+              <Link to="/flexibilite"><button className="class-button">➔</button></Link>
             </div>
           </div>
           <div className="class-card2">
@@ -106,7 +172,7 @@ export default function Homme() {
                 <span className="class-category2">Sports de combat</span>
                 <h3 className="class-title">Boxe - Kickboxing</h3>
               </div>
-              <button className="class-button">➔</button>
+              <Link to="/boxe"><button className="class-button">➔</button></Link>
             </div>
           </div>
         </div>

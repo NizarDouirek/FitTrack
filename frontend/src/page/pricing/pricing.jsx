@@ -30,7 +30,7 @@ const Pricing2 = () => {
       name: 'Basic',
       monthlyPrice: '$19',
       yearlyPrice: '$199',
-      features: ['5 Projects', '10 GB Storage', 'Basic Analytics', 'Community Support', 'Custom Domains'],
+      features: ['Suivi des calories et macronutriments','Journal alimentaire quotidien','Plans nutritionnels de base','Suivi du poids et IMC','Accès à la communauté'],
       buttonText: 'Get Started',
       isPopular: false,
     },
@@ -39,12 +39,7 @@ const Pricing2 = () => {
       monthlyPrice: '$49',
       yearlyPrice: '$499',
       features: [
-        'Unlimited Projects',
-        '50 GB Storage',
-        'Advanced Analytics',
-        'Priority Email Support',
-        'Custom Domains',
-        'Team Collaboration',
+        'Tout du plan Basic','Plans nutritionnels personnalisés','Suivi de l’hydratation','Rapports et analyses avancées','Intégration avec montres connectées','Support prioritaire par email'
       ],
       buttonText: 'Start Free Trial',
       isPopular: true,
@@ -54,12 +49,7 @@ const Pricing2 = () => {
       monthlyPrice: '$99',
       yearlyPrice: '$999',
       features: [
-        'All Pro Features',
-        'Unlimited Storage',
-        'Real-time Analytics',
-        '24/7 Phone Support',
-        'Dedicated Account Manager',
-        'SAML/SSO Integration',
+      'Toutes les fonctionnalités Pro','Gestion multi-utilisateurs (clients, athlètes)','Tableau de bord en temps réel','Support 24/7 (chat & téléphone)','programmes d’entraînement','Intégration API & export des données'
       ],
       buttonText: 'Contact Sales',
       isPopular: false,
@@ -159,7 +149,7 @@ const Pricing2 = () => {
                   <span className="period">/{isMonthly ? 'month' : 'year'}</span>
                 </div>
                 <p className="description">
-                  {tier.name === 'Basique' && 'For individuals and small teams getting started.'}
+                  {tier.name === 'Basic' && 'For individuals and small teams getting started.'}
                   {tier.name === 'Pro' && 'Perfect for growing businesses and advanced users.'}
                   {tier.name === 'Enterprise' && 'Tailored for large organizations with specific needs.'}
                 </p>

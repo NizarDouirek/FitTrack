@@ -15,6 +15,8 @@ import ForcePage from './Composant/Pages/DetailService/Force/force';
 import CardioPage from './Composant/Pages/DetailService/Cardio/cardio';
 import NutritionPage from './Composant/Pages/DetailService/nutrution/nutrution';
 import ScrollToTop from './Composant/scrolltop/scrolltop';
+import Flexibilite from './Composant/Pages/DetailService/Flexibilite/flexibilite';
+import Boxe from './Composant/Pages/DetailService/Boxe/boxe';
 
 function App() {
    return(
@@ -34,6 +36,10 @@ function App() {
           <Route path="/home/Cardio" element={<CardioPage />} />
           <Route path="/nutrition" element={ <NutritionPage/>} />
           <Route path="/home/nutrition" element={<NutritionPage />} />
+          <Route path="/flexibilite" element={ <Flexibilite/>} />
+          <Route path="/home/flexibilite" element={<Flexibilite />} />
+          <Route path="/boxe" element={ <Boxe/>} />
+          <Route path="/home/boxe" element={<Boxe />} />
           <Route path="/Galerie" element={ <Galerie/>} />
           <Route path="/login" element={<Login />} /> 
           <Route path="/signup" element={<Signup />} />   

@@ -17,7 +17,7 @@ const data = [
         id: 3,
         category: "Nutrition & Coaching",
         title: "Plans alimentaires personnalisés",
-        image: "force.webp",
+        image: "nut.jpg",
           link: "/nutrition"
       },
   ];

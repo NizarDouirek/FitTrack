@@ -10,7 +10,7 @@ export default function Signup(){
             <div className="ContentForm">
            
             <form action="" className="formsignup">
-            <img className="logosignup" src="fit.png" alt="" />  
+            <img className="logosignup" src="logoHe.webp" alt="" />  
                 <h1>S'inscrire</h1>
                
               

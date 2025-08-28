@@ -19,9 +19,10 @@
     width: 50%;
 }
 .logosignup{
-    margin-top: -15px; 
+    margin-top: -25px; 
     width: 150px;
-    height: 100px;
+    height: 110px;
+      user-select: none; 
 }
 .formsignup{
     backdrop-filter: blur(15px) brightness(80%);

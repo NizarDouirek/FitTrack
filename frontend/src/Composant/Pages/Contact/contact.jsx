@@ -104,10 +104,11 @@ export default function Contact(){
         <button type="submit">Envoyer</button>
       </form>
     </div>
-    <div className="map-container">
+   <div className="map-container">
+  <div className="map-overlay"></div>
   <iframe
     title="Google Map"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.9052891512814!2d-72.06191312347855!3d42.75274811472868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e00d4703f7e2df%3A0x4d6797d4ee5f4eaa!2s333%20Middle%20Winchendon%20Rd%2C%20Rindge%2C%20NH%2003461%2C%20USA!5e0!3m2!1sen!2sma!4v1715518203421!5m2!1sen!2sma"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0641076216926!2d-7.641006124645839!3d33.588310973347105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd2db9e8f68b%3A0x5c3b3f29a8f6f7c!2sRue%20Abou%20Rakrak%2C%20Ma%C3%A2rif%2C%20Casablanca!5e0!3m2!1sfr!2sma!4v1698958203421!5m2!1sfr!2sma"
     width="100%"
     height="300"
     allowFullScreen=""

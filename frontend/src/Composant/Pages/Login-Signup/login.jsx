@@ -14,7 +14,7 @@ export default function Login(){
                
             </div>
             <form action="" className="formLogin">
-            <img className="logoForm" src="fit.png" alt="" />  
+            <img className="logoForm" src="logoHe.webp" alt="" />  
                 <h1>Se connecter</h1><br />
                
               
