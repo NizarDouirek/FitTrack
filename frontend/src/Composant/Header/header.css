@@ -1,67 +1,66 @@
+/* ============================= */
+/* HEADER GLOBAL */
+/* ============================= */
 header {
   margin-top: 30px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   z-index: 100;
-  height: auto;            /* laisse la hauteur naturelle */
-  overflow: visible;      /* IMPORTANT: permet au dropdown de dépasser */
   position: relative;
   padding: 10px 20px;
-}
-/* header:not(.scrolled) {
-    background-color: transparent; 
-    margin-top: 30px;
+  height: auto;
+  overflow: visible; /* permet au dropdown de dépasser */
 }
 
-header.scrolled {
-    background:linear-gradient(90deg,#252525,rgb(21, 16, 16),rgb(28, 26, 26));
-    margin-top: -1px; 
-} */
-.logo img{
-   margin-top: -40px;
-    width: 200px;
-    height: 150px;
-}
-.logo{
-    /* margin-left: 50px; */
-    display: flex; 
-    justify-content: center;
-    gap: 1rem;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
+.logo img {
+  margin-top: -40px;
+  width: 200px;
+  height: 150px;
+}
 
+/* ============================= */
+/* NAVBAR DESKTOP */
+/* ============================= */
 .navbar {
-    margin-top: 25px; 
-    display: flex;
-    
-}
-.navbar ul{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 300px;
-    gap: 2.3rem;
-    list-style: none;
-
+  margin-top: 25px;
+  display: flex;
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    font-family: Inter, "Inter Fallback";
-    font-size:20px;
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 300px;
+  gap: 2.3rem;
+  list-style: none;
 }
-nav a:hover{
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Inter, "Inter Fallback";
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
   color: red;
-  
-
-  /* text-decoration:underline; */
 }
+
+/* ============================= */
+/* DROPDOWN */
+/* ============================= */
 .dropdown {
-  position: relative; /* IMPORTANT */
+  position: relative;
 }
 
-/* dropdown moderne (utilise visibility/opacity pour animer) */
 .dropdown-content {
   position: absolute;
   top: calc(100% + 10px);
@@ -70,7 +69,7 @@ nav a:hover{
   background: rgba(20, 20, 20, 0.95);
   backdrop-filter: blur(6px);
   border-radius: 10px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   z-index: 999;
   visibility: hidden;
   opacity: 0;
@@ -79,7 +78,6 @@ nav a:hover{
   transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s;
 }
 
-/* liens */
 .dropdown-content a {
   color: #fff;
   padding: 12px 16px;
@@ -93,26 +91,22 @@ nav a:hover{
   background: linear-gradient(90deg, #1a1a1a, #575656);
   padding-left: 20px;
 }
-/* bouton du menu déroulant */
+
 .dropbtn {
   display: flex;
   align-items: center;
-  gap: 2px; /* espace entre texte et flèche */
+  gap: 5px;
 }
 
-/* flèche */
 .arrow {
   font-size: 12px;
-  margin-top: 2px;
   transition: transform 0.3s ease;
 }
 
-/* quand on survole le menu → flèche vers le haut */
 .dropdown:hover .arrow {
   transform: rotate(180deg);
 }
 
-/* ouverture au hover et au focus (clavier) */
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
   visibility: visible;
@@ -120,26 +114,111 @@ nav a:hover{
   transform: translateY(0);
   pointer-events: auto;
 }
-.cnx{
-    color: white;
-    background-color: red;
-    font-family: roboto;
-    font-size: 20px;
-    margin-left: 50px;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: -15px;
-    /* box-shadow: 0 0 20px 8px rgba(208, 67, 107, 0.7);  */
-}
-.cnx a{
-    text-decoration: none;
-}
-.cnx:hover{
-    background:linear-gradient(90deg,#e90936,#FF6969);
-    /* text-decoration: underline white; */
-    transform: scale(1.01);
-    box-shadow: 0 0 20px 8px rgba(202, 83, 116, 0.7); 
-    
+
+/* ============================= */
+/* BOUTON CONNEXION */
+/* ============================= */
+.cnx {
+  color: white;
+  background-color: red;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin-top: -15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.cnx:hover {
+  background: linear-gradient(90deg, #e90936, #FF6969);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 8px rgba(202, 83, 116, 0.7);
+}
+
+/* ============================= */
+/* TABLETTE (max 1024px) */
+/* ============================= */
+@media screen and (max-width: 1024px) {
+  .logo img {
+    width: 150px;
+    height: 120px;
+    margin-top: -20px;
+  }
+
+  .navbar ul {
+    margin-left: 100px;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .cnx {
+    font-size: 18px;
+    padding: 8px 14px;
+  }
+}
+
+/* ============================= */
+/* MOBILE (max 768px) */
+/* ============================= */
+@media screen and (max-width: 768px) {
+  .logo {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 120px;
+    height: auto;
+    margin-top: 0;
+  }
+
+  /* cacher navbar par défaut */
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #111;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    border-radius: 10px;
+  }
+
+  /* afficher quand burger actif */
+  .navbar.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* ============================= */
+/* PETIT MOBILE (max 480px) */
+/* ============================= */
+@media screen and (max-width: 480px) {
+  .logo img {
+    width: 100px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .cnx {
+    font-size: 16px;
+    padding: 6px 10px;
+    margin-left: 10px;
+  }
+}

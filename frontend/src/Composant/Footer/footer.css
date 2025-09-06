@@ -221,3 +221,140 @@
     text-align: center;
     padding: 10px;
 }
+/* ============================= */
+/* TABLETTE (≤ 1024px) */
+/* ============================= */
+@media screen and (max-width: 1024px) {
+  .footer1 {
+    height: auto;
+    padding: 40px;
+  }
+
+  .HeadFooter {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 20px;
+  }
+
+  .HeadFooter img {
+    width: 600px;
+    height: auto;
+    margin-top: -200px;
+  }
+
+  .lefthead .p1 {
+    font-size: 45px;
+  }
+
+  .lefthead .p2 {
+    font-size: 22px;
+  }
+
+  .contentsousfoot {
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+
+  .col1, .col2, .col3, .col4 {
+    flex: 1 1 45%;
+  }
+}
+
+/* ============================= */
+/* MOBILE (≤ 768px) */
+/* ============================= */
+@media screen and (max-width: 768px) {
+  .footer1 {
+    padding: 30px 20px;
+  }
+
+  .HeadFooter {
+    flex-direction: column;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .HeadFooter img {
+    display: none; /* On cache l'image en mobile pour alléger */
+  }
+
+  .contentHeadFooter {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .lefthead .p1 {
+    font-size: 32px;
+  }
+
+  .lefthead .p2 {
+    font-size: 18px;
+  }
+
+  .contentsousfoot {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .col4 p {
+    justify-content: center;
+  }
+}
+
+/* ============================= */
+/* PETIT MOBILE (≤ 480px) */
+/* ============================= */
+@media screen and (max-width: 480px) {
+  .footer1 {
+    padding: 20px 15px;
+  }
+
+  .lefthead .p1 {
+    font-size: 26px;
+  }
+
+  .lefthead .p2 {
+    font-size: 16px;
+  }
+
+  .lefthead button {
+    font-size: 16px;
+    width: 160px;
+    padding: 8px;
+  }
+
+  .col1 img {
+    width: 140px;
+    height: auto;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icons .iconFoot {
+    font-size: 24px;
+  }
+
+  .col2 h1,
+  .col3 h1,
+  .col4 h1 {
+    font-size: 18px;
+  }
+
+  .col2 a,
+  .col3 a,
+  .col4 p {
+    font-size: 14px;
+  }
+
+  .copy {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
