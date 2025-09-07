@@ -266,3 +266,147 @@ body {
 }
 
 
+/* ============================= */
+/* RESPONSIVE ABOUT (tablette) */
+/* ============================= */
+@media (max-width: 1024px) {
+  .about2 h1 {
+    width: 100%;
+    font-size: 32px;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+
+  .titreAbout2 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .titreAbout2 p {
+    width: 90%;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  .fleche {
+    width: 180px;
+    height: auto;
+  }
+
+  .headAbout {
+    gap: 3rem;
+  }
+
+  .headAbout .img11bout {
+    width: 450px;
+    height: auto;
+  }
+
+  .leftAb {
+    width: 100%;
+  }
+
+  .about3 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 2rem;
+  }
+
+  .about3 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+
+/* ============================= */
+/* RESPONSIVE ABOUT (mobile) */
+/* ============================= */
+@media (max-width: 768px) {
+  .about2 {
+    margin-top: 100px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .about2 h1 {
+    font-size: 24px;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .titreAbout2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .titreAbout2 p {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .fleche {
+    width: 120px;
+    height: auto;
+  }
+
+  .headAbout {
+    flex-direction: column;
+    padding: 20px;
+    gap: 2rem;
+    margin-left: 0;
+  }
+
+  .headAbout .img11bout {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .headAbout h2 {
+    font-size: 1.4rem;
+  }
+
+  .headAbout p {
+    font-size: 0.95rem;
+  }
+
+  .btn-about1 {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .about3 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 1.5rem;
+  }
+
+  .about3 img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .about-text-icons h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .icon-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-text p {
+    font-size: 14px;
+  }
+}

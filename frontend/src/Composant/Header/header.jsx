@@ -1,3 +1,4 @@
+// Header.jsx
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
@@ -19,6 +20,7 @@ export default function Header() {
     <header className={isScrolled ? "scrolled" : ""}>
       <div className="logo">
         <img src="logoHe.webp" alt="Logo" />
+
         {/* bouton burger visible seulement en mobile */}
         <div 
           className="menu-toggle"
@@ -34,9 +36,9 @@ export default function Header() {
             <li><Link to="/home">Accueil</Link></li>
             <li><Link to="/about">À propos</Link></li>
             <li className="dropdown">
-              <Link to="/home" className="dropbtn" onClick={(e) => e.preventDefault()}>
+              <span className="dropbtn">
                 Fonctionnalités <span className="arrow">▼</span>
-              </Link>
+              </span>
               <div className="dropdown-content">
                 <Link to="/faq">FAQ</Link>
                 <Link to="/bmi">BMI Calculateur</Link>
@@ -46,9 +48,11 @@ export default function Header() {
             </li>
             <li><Link to="/Blog">Blog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-            <Link to="/login">
-              <button className="cnx">Se connecter</button>
-            </Link>
+            <li>
+              <Link to="/login">
+                <button className="cnx">Se connecter</button>
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

@@ -93,4 +93,51 @@
     grid-column-start: 4;
     grid-row-start: 11;
 }
-        
+        /* ✅ Tablette (≤ 1024px) */
+@media (max-width: 1024px) {
+  .parent {
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    grid-auto-rows: 220px;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  /* On simplifie la disposition */
+  .parent > div {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+}
+
+/* ✅ Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .parent {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    grid-auto-rows: 200px;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .parent > div {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .section-titleG {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+}
+
+/* ✅ Mobile compact (≤ 400px) */
+@media (max-width: 400px) {
+  .parent {
+    grid-template-columns: 1fr; /* 1 seule colonne */
+    grid-auto-rows: 300px;
+    gap: 6px;
+  }
+
+  .section-titleG {
+    font-size: 16px;
+  }
+}

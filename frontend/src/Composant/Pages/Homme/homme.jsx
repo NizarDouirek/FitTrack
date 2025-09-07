@@ -37,7 +37,7 @@ export default function Homme() {
 
       <div className="containerAbout2">
         {/* Header */}
-        <div className="header animate-fadeInUp">
+        <div className="headerA animate-fadeInUp">
           <h2>
             À Propos de <span className="gradient-text2">FitTrack</span>
           </h2>
@@ -131,7 +131,7 @@ export default function Homme() {
         </div>
         
              <div class="btnshowmore">
-  <a href="/about" class="btn showmore">Qui nous sommes ▼</a>
+  <a href="/about" class="btnshow showmore">Qui nous sommes ▼</a>
 </div>
       </div>
 

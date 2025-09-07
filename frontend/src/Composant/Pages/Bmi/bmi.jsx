@@ -114,7 +114,7 @@ export default function BMICalculator() {
       </div>
 
       <div className="bmi-calculator">
-        <header className="header">
+        <header className="headerBMI">
           <h1>BMI Calculator</h1>
           <p>
             Découvrez votre Indice de Masse Corporelle avec notre calculateur

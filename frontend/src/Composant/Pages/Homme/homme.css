@@ -34,7 +34,7 @@ body, html, #root, .homme {
   --white: black;
 }
 
-.btn {
+.btnshow {
   display: inline-block;
   font: 600 18px/1.1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   padding: 10px;
@@ -431,12 +431,12 @@ body, html, #root, .homme {
 }
 
 /* Header */
-.header {
+.headerA {
   text-align: center;
   margin-bottom: 60px;
 }
 
-.header h2 {
+.headerA h2 {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -448,7 +448,7 @@ body, html, #root, .homme {
   -webkit-text-fill-color: transparent;
 }
 
-.header p {
+.headerA p {
   color: #aaa;
   font-size: 18px;
   max-width: 700px;
@@ -583,8 +583,14 @@ body, html, #root, .homme {
 /* Responsive */
 @media (max-width: 992px) {
   .gridAbout {
-    grid-template-columns: 1fr;
-    text-align: center;
+    /* grid-template-columns: 1fr;
+    text-align: center; */
+    
+  }
+  .gridAbout {
+    grid-template-columns: 1fr; 
+    text-align: center; /* Centrer le contenu */
+    gap: 30px; /* Réduire l’espace */
   }
 
   .stats2 {
@@ -673,13 +679,38 @@ body, html, #root, .homme {
     flex-direction: column;
     align-items: center;
   }
-
-  .content-pn {
-    width: 100%;
+  .titre-pn h1{
+    font-size: 20px;
   }
 
+  .content-pn {
+    width: 90%;
+    
+  }
+  .content-pn img{
+    width: 110px;
+    height: 60px;
+  }
+.btnshow{
+  font-size: 12px;
+}
+.class-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .class-image2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  }
+  
   .classes-grid {
     gap: 1.5rem;
+  }
+  .section-subtitle{
+    font-size: 20px;
   }
 
   .class-card,
@@ -688,7 +719,7 @@ body, html, #root, .homme {
   }
 
   .inscrit {
-    height: auto;
+    height: 300px;
     line-height: normal;
   }
 
@@ -727,6 +758,41 @@ body, html, #root, .homme {
   }
 
   .inscrit p {
+    font-size: 16px;
+  }
+}
+/* Responsive - Téléphones */
+@media (max-width: 768px) {
+  .gridAbout {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    gap: 30px; /* Réduire l’espace */
+    text-align: center; /* Centrer le texte */
+  }
+
+  .stats2 {
+    flex-direction: column; /* Les stats passent en colonne */
+    gap: 15px;
+  }
+
+  .visual2 img {
+    width: 100%; /* Image prend toute la largeur */
+    height: auto; /* Garde les proportions */
+  }
+
+  .headerA h2 {
+    font-size: 28px; /* Réduire le titre */
+  }
+
+  .headerA p {
+    font-size: 16px;
+    padding: 0 10px; /* Ajoute un peu de marge sur les côtés */
+  }
+
+  .left h3 {
+    font-size: 22px;
+  }
+
+  .left p {
     font-size: 16px;
   }
 }

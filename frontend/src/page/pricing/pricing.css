@@ -116,11 +116,79 @@
   }
 }
 
-@media (min-width: 1024px) {
+/* === Responsive Téléphones === */
+@media (max-width: 640px) {
+  .pricing-container {
+    padding: 20px 15px; /* Réduire les marges internes */
+  }
+
+  .pricing-content {
+    flex-direction: column; /* Empile le contenu */
+    padding: 1.5rem 0.5rem;
+    min-height: auto;
+  }
+
   .title {
-    font-size: 3.75rem;
+    font-size: 1.75rem; /* Réduire la taille du titre */
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding: 0 10px;
+  }
+
+  .toggle-container {
+    margin-top: 1.5rem;
+  }
+
+  .toggle-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .cards-grid {
+    margin-top: 2rem;
+    grid-template-columns: 1fr; /* Une seule carte par ligne */
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem 1rem; /* Réduire padding */
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+
+  .period {
+    font-size: 1rem;
+  }
+
+  .features-list {
+    gap: 0.5rem;
+  }
+
+  .feature-item span {
+    font-size: 0.9rem;
+  }
+
+  .action-btn {
+    padding: 12px 20px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }
+
 
 .subtitle {
   margin-top: 1rem;
