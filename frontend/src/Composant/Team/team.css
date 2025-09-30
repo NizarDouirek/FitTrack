@@ -1,0 +1,140 @@
+.team {
+    height: 100vh;
+    background-image: url('/public/bgbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+/* Animation */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Section */
+.team-section {
+  margin-top: 40px;
+  padding: 50px 20px;
+  background: #000000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header */
+.team-header h2 {
+   font-size: 2.5rem;
+  color: red;
+  
+}
+
+.team-header p {
+margin-top: 10px;
+margin-left: 270px;
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #ffffff, #eedfe0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 800px;
+
+}
+
+/* Grid */
+.team-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card */
+.team-card {
+  background: #0d0d0d;
+  width: 250px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Photo */
+.team-photo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #820606;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-photo img {
+  transform: scale(1.1);
+}
+
+/* Name & Role */
+.team-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* Text */
+.team-name {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 8px 0 4px;
+}
+
+.team-role {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+/* Socials */
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.team-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000000;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.team-socials a:hover {
+  background: #ffffff;
+  color: #cc0909;
+  transform: scale(1.1);
+}

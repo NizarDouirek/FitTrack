@@ -5,20 +5,23 @@ import Header from "../Header/header";
 import Footer from "../Footer/footer";
 export default function Galerie(){
     return(
-      <><div className="headerAbout">
-              <Header />
-            </div>
-     
-         <div className="contentContact">
-                <div className="contact1">
-                   
-                    <div className="leftCo">
-                      <p className="p1">Galerie</p>
-                      <p className="p2">
-                        <Link to="/home" className="accueil-link">Accueil</Link> / Galerie
-                      </p>
-                    </div>
-                </div>
+      <div id="Galerie" className="Galerie">
+                       <div className="headerbmi">
+                         <Header />
+                       </div>
+                 
+                       <div className="contentbmi">
+                         <div className="contact1">
+                            
+                             <div className="leftCo">
+                               <p className="p1">Galerie</p>
+                               <p className="p2">
+                                 <Link to="/home" className="accueil-link">Accueil</Link> / Galerie
+                               </p>
+                             </div>
+                           </div>
+                           
+                         </div>
                 <h2 className="section-titleG"> Explorez FitTrack en images !</h2>
                
 <div className="parent">
@@ -35,6 +38,6 @@ export default function Galerie(){
     <Footer/>
             </div>
             
-             </>
+          
     )
 }

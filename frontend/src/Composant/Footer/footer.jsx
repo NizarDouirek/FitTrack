@@ -19,8 +19,8 @@ export default function Footer() {
           <div className="contentHeadFooter">
             <img src="fooo.webp" alt="" />
             <div className="lefthead">
-              <p className="p1">Prêt à commencer ?</p>
-              <p className="p2">
+              <p className="p1Footer">Prêt à commencer ?</p>
+              <p className="p2Footer">
                 Rejoignez la communauté FitTrack et transformez votre santé, un
                 pas à la fois !
               </p>
@@ -90,10 +90,10 @@ export default function Footer() {
             <ul>
               
               <li>
-                <a href="/signup">s'inscrire</a>
+                <a href="/signup">S'inscrire</a>
               </li>
               <li>
-                <a href="/login">connecter</a>
+                <a href="/login">Connecter</a>
               </li>
               <a href="/faq">FAQ</a><br />
               <li><Link to="/contact">Contact</Link></li>
@@ -117,8 +117,9 @@ Casablanca, Maroc   </p>
             </p>
           </div>
         </div>
+         <div className="copy">Copyright © 2025 Fittrack. All Right Reserved.</div>
       </div>
-      <div className="copy">Copyright © 2025 Fittrack. All Right Reserved.</div>
+     
     </div>
   );
 }

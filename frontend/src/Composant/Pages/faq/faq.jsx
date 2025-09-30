@@ -43,23 +43,23 @@ export default function FAQGym() {
   };
 
   return (
-     <div>
-              <div className="headerFaq">
-                <Header />
-              </div>
-        
-              <div className="contentfaq">
-                <div className="faq">
-                   
-                    <div className="leftCo">
-                      <p className="p1">Faq</p>
-                      <p className="p2">
-                        <Link to="/home" className="accueil-link">Accueil</Link> / Faq
-                      </p>
-                    </div>
+      <div id="faq" className="faq">
+          <div className="headerContact">
+                          <Header />
+                        </div>
                   
-                  </div>
-                </div>
+                        <div className="contentContact">
+                          <div className="contact1">
+                             
+                              <div className="leftCo">
+                                <p className="p1">Faq</p>
+                                <p className="p2">
+                                  <Link to="/home" className="accueil-link">Accueil</Link> / Faq
+                                </p>
+                              </div>
+                            
+                            
+                          </div>
     <section className="faq-section">
       <div className="faq-container">
         {/* Titre */}
@@ -145,6 +145,7 @@ export default function FAQGym() {
       </div>
     </section>
     <Footer/>
+    </div>
     </div>
   );
 }

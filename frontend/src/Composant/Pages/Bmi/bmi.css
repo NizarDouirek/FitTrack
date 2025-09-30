@@ -1,11 +1,29 @@
 
+.bmi{
+  height: 100vh;
+    background-image: url('/public/bgbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
 
+.headerbmi {
+   margin-top: -30px;
+   padding: 10px;
+   border-radius: 30px;
+}
+
+.contentbmi {
+    height: 70vh;
+    background-repeat: no-repeat;
+}
 .app-container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 40px;
   /* background: linear-gradient(135deg, #000000 0%, #090909 50%, #101010 100%); */
   background-color: black;
   position: relative;
+
 }
 
 .app-container::before {
@@ -45,7 +63,7 @@
 
 .headerBMI p {
   font-size: 1.2rem;
-  color: #cccccc;
+  color: #fffefe;
   font-weight: 300;
   max-width: 600px;
   margin: 0 auto;
@@ -232,7 +250,7 @@
 }
 
 .table-container {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgb(0, 0, 0);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px; padding: 30px; overflow-x: auto;
@@ -240,7 +258,7 @@
 
 .bmi-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
 .bmi-table th {
-  background: rgba(230, 0, 0, 0.1); color: #ffffff; padding: 18px 15px; text-align: left;
+  background: rgb(240, 234, 234); color: #000000; padding: 18px 15px; text-align: left;
   font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;
   border-bottom: 2px solid rgba(230, 0, 0, 0.3);
 }
@@ -251,10 +269,10 @@
 .bmi-table tr:hover { background: rgba(255, 255, 255, 0.03); transform: scale(1.01); transition: all 0.3s ease; }
 
 .category-badge { padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-.underweight-badge { background: linear-gradient(135deg, #2196F3 0%, #21CBF3 100%); color:#fff; }
-.normal-badge      { background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%); color:#fff; }
-.overweight-badge  { background: linear-gradient(135deg, #FF9800 0%, #FFC107 100%); color:#fff; }
-.obese-badge       { background: linear-gradient(135deg, #F44336 0%, #E91E63 100%); color:#fff; }
+.underweight-badge { background: linear-gradient(135deg, #00ffcc 0%, #03bae3 100%); color:#000000; }
+.normal-badge      { background: linear-gradient(135deg, #498603 0%, #8BC34A 100%); color:#000000; }
+.overweight-badge  { background: linear-gradient(135deg, #FF9800 0%, #f7ff07 100%); color:black; }
+.obese-badge       { background: linear-gradient(135deg, #fa4d41 0%, #E91E63 100%); color:black; }
 
 .bmi-range { font-weight: 600; color: #e60000; font-size: 1rem; }
 .risk-level { font-weight: 500; }

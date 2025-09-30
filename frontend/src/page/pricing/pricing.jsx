@@ -88,9 +88,9 @@ const Pricing2 = () => {
           <div className="text-center">
             
         <h2 className="section-title">Tarifs</h2>
-            <h1 className="title">Tarification simple et transparente</h1>
+            {/* <h1 className="title5">Tarification simple et transparente</h1> */}
             <p className="subtitle">
-             Choisissez le plan qui vous convient. Pas de frais cachés, pas de surprises.
+             Choisissez le plan qui vous convient
             </p>
           </div>
 

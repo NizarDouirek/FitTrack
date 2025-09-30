@@ -1,7 +1,7 @@
  .testimonials-section {
             padding: 80px 20px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 50px;
             position: relative;
         }
 
@@ -61,7 +61,7 @@
             position: relative;
             overflow: hidden;
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(230, 0, 0, 0.2);
+            box-shadow: 0 15px 40px rgba(252, 252, 252, 0.2);
         }
 
         .testimonial-image svg {
@@ -87,7 +87,7 @@
         .testimonial-text::before {
             content: '"';
             font-size: 6rem;
-            color: #e60000;
+            color: #03ffe2;
             position: absolute;
             top: -30px;
             left: -20px;
@@ -124,7 +124,7 @@
         }
 
         .client-role {
-            color: #7d7878;
+            color: #03ffe2;
             font-size: 1.1rem;
             font-weight: 500;
         }
@@ -136,7 +136,7 @@
         }
 
         .star {
-            color: #e60000;
+            color: #03ffe2;
             font-size: 1.5rem;
         }
 
@@ -187,7 +187,7 @@
         }
 
         .indicator.active {
-            background: #e60000;
+            background: #03ffe2;
             transform: scale(1.2);
         }
 

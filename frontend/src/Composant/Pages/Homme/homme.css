@@ -122,15 +122,20 @@ body, html, #root, .homme {
     transform: scale(1.05); /* Léger agrandissement */
 }
 .pn{
-    background-color: black;
+    background-image:linear-gradient(
+      rgba(0, 0, 0, 0.6),   /* couche noire transparente */
+      rgba(0, 0, 0, 0.6)
+    ), url('/public/bgbl.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 120px;
 }
 .titre-pn{
     color: white;
     font-size: 20px;
     text-align: center;
-   text-transform: uppercase;
-   font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
 }
 .titre-pn h4{
     color: red;
@@ -149,12 +154,12 @@ body, html, #root, .homme {
 }
 .content-pn{
     overflow: hidden;
-    margin-top: 5%;
+    margin-top: 50px;
     width: 250px;
     text-align: center;
-    color: white;
+    color: #ffffff;
     padding: 20px;
-    background-color: rgb(8, 8, 8);
+    background-color: rgba(8, 8, 8, 0.371);
     transition: transform 0.3s ease, box-shadow 0.5s ease;
     
 }
@@ -165,17 +170,20 @@ body, html, #root, .homme {
 }
 .content-pn:hover{
     transform: translateY(-5px);
-    background-color: rgb(14, 14, 14);
+    color: #000;
+    background-color: rgb(255, 255, 255);
     /* box-shadow: 0 8px 10px rgba(218, 172, 172, 0.3); */
 }
-
+.content-pn:hover p{
+  color: #000;
+}
 .content-pn p{
-    color: rgb(199, 198, 198);
+    color: #ffffff;
 }
 .classes-section {
     text-align: center;
     padding: 100px 20px;
-    background-color: rgb(17, 16, 16);
+    background-color: rgb(0, 0, 0);
   }
   
   .section-title {
@@ -199,7 +207,11 @@ body, html, #root, .homme {
   }
   
   .class-card {
-    background-color: #070707;
+    /* background-color: #070707; */
+    background-image:linear-gradient(
+      rgba(0, 0, 0, 0.855),   /* couche noire transparente */
+      rgba(0, 0, 0, 0.744)
+    ), url('/public/bgbl.png');
     color: white;
     border-radius: 10px;
     overflow: hidden;
@@ -228,7 +240,11 @@ body, html, #root, .homme {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   }
   .class-card2 {
-    background-color: #070707;
+    /* background-color: #070707; */
+      background-image:linear-gradient(
+      rgba(0, 0, 0, 0.855),   /* couche noire transparente */
+      rgba(0, 0, 0, 0.744)
+    ), url('/public/bgbl.png');
     color: white;
     border-radius: 10px;
     overflow: hidden;
@@ -245,14 +261,14 @@ body, html, #root, .homme {
   
   .class-category {
     font-size: 20px;
-    color: red;
+    color: #03ffe2;
     font-weight: bold;
     font-family: monospace;
     /* margin-right: 100px; */
   }
   .class-category2 {
     font-size: 20px;
-    color: red;
+    color: #03ffe2;
     font-weight: bold;
     font-family: monospace;
     
@@ -275,17 +291,16 @@ body, html, #root, .homme {
     margin-top: 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-  
   .class-button:hover {
-    background-color: red;
-    color: wheat;
+    background-color: #03ffe2;
+    color: rgb(0, 0, 0);
   }
 .inscrit{
     background:url('/public/ins.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 570px;
+    height: 470px;
     text-align: center;
     line-height: 60px;
     padding: 20px;
@@ -294,7 +309,7 @@ body, html, #root, .homme {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+    margin-top: 50px;
 }
 .titreIns {
     color: white;
@@ -424,7 +439,7 @@ body, html, #root, .homme {
 
 /* Container */
 .containerAbout2 {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -437,22 +452,27 @@ body, html, #root, .homme {
 }
 
 .headerA h2 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: red;
+    text-align: center;
+      font-family: 'Courier New', Courier, monospace;
 }
 
 .gradient-text2 {
   background: linear-gradient(135deg, #ef4444, #dc2626);
   -webkit-background-clip: text;
+  font-family: 'Courier New', Courier, monospace;
   -webkit-text-fill-color: transparent;
 }
 
-.headerA p {
-  color: #aaa;
-  font-size: 18px;
-  max-width: 700px;
-  margin: 0 auto;
+.headerA h1{
+ color: white;
+    font-size: 29px;
+    text-align: center;
+   text-transform: uppercase;
+   font-family: 'Courier New', Courier, monospace;
 }
 
 /* Grid */
@@ -469,7 +489,9 @@ body, html, #root, .homme {
   color: #ef4444;
   margin-bottom: 20px;
 }
-
+ .pn {
+  margin-top: 40px;
+ }
 .left p {
   font-size: 18px;
   color: #ffffff;
@@ -491,7 +513,7 @@ body, html, #root, .homme {
 .number2 {
   font-size: 32px;
   font-weight: bold;
-  color: #6c0651;
+  color: #03ffe2;
 }
 
 .label2 {
@@ -500,38 +522,7 @@ body, html, #root, .homme {
 }
 
 /* Right visual */
-.visual2 {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(0, 0, 0, 0.8));
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  border-radius: 16px;
-  padding: 15px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.visual2:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(239, 68, 68, 0.35);
-}
-
-/* SVG */
-.motiv-svg {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 20px;
-}
-
-/* Motiv text */
-.motiv-text h4 {
-  font-size: 22px;
-  font-weight: bold;
-  background: linear-gradient(135deg, #ef4444, #dc2626);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: 10px;
-}
 
 
 /* Animations */
@@ -795,4 +786,144 @@ body, html, #root, .homme {
   .left p {
     font-size: 16px;
   }
+}
+.marquee-container2 {
+  width: 100%;
+  overflow: hidden;
+  
+  white-space: nowrap;
+  padding: 10px 0;
+   background: linear-gradient(to right,  #0d8280,#019ece);
+ /* margin-top: 60px; */
+  font-weight: 900;
+  text-transform: uppercase;
+  will-change: transform, opacity;
+}
+
+.marquee-content2 {
+  display: inline-block;
+  animation: scroll-left 30s linear infinite;
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Bonus : pause animation au survol du container */
+.marquee-container2:hover .marquee-content2 {
+  animation-play-state: paused;
+}
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 30px;
+  transition: color 0.3s ease;
+  cursor: default;
+  gap: 8px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.carousel-item:hover {
+  color: black;
+}
+
+.carousel-item svg {
+  fill: #dcf7ed;
+  /* width: 22px;   
+  height: 22px;   */
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover svg {
+  transform: scale(1.1);
+  fill: black;
+
+}
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    font-size: 16px;
+    /* margin: 0 15px; */
+    gap: 6px;
+  }
+
+  .carousel-item svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .marquee-container2 {
+    padding: 10px 0;
+  }
+
+  .marquee-content2 {
+    animation: scroll-left 20s linear infinite;
+  }
+}
+.about-content {
+  flex: 1;
+}
+
+.about-subtitle {
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ede6e6;
+}
+
+.about-text {
+  color: #bbb9b9;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.stat h3 {
+  color: #03ffe2;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #d2f4ef;
+}
+
+.join-btn {
+  background: #07a593;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.join-btn:hover {
+  background: #0ac7d8;
 }

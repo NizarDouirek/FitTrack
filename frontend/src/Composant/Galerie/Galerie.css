@@ -1,3 +1,10 @@
+.Galerie{
+     height: 100vh;
+    background-image: url('/public/bgbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
 .parent {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* 6 colonnes */
