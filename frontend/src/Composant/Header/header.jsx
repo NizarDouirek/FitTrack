@@ -35,6 +35,7 @@ export default function Header() {
           <ul>
             <li><Link to="/home">Accueil</Link></li>
             <li><Link to="/about">À propos</Link></li>
+            <li><Link to="/bmi">BMI Calculateur</Link></li>
             <li className="dropdown">
               <span className="dropbtn">
                 Fonctionnalités <span className="arrow">▼</span>
@@ -43,11 +44,12 @@ export default function Header() {
                 <Link to="/Blog">Blog</Link>
                 <Link to="/faq">FAQ</Link>
                 <Link to="/team">Team</Link>
-                <Link to="/bmi">BMI Calculateur</Link>
+                
                 <Link to="/galerie">Galerie</Link>
                 <Link to="/notfound">NotFound</Link>
               </div>
             </li>
+            
             <li><Link to="/PricingTable">Pack</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             <li>

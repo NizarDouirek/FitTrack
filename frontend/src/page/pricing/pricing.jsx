@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import './pricing.css';
 
@@ -28,16 +29,16 @@ const Pricing2 = () => {
   const pricingTiers = [
     {
       name: 'Basic',
-      monthlyPrice: '$19',
-      yearlyPrice: '$199',
+      monthlyPrice: '250Dh',
+      yearlyPrice: '2490Dh',
       features: ['Suivi des calories et macronutriments','Journal alimentaire quotidien','Plans nutritionnels de base','Suivi du poids et IMC','Accès à la communauté'],
       buttonText: 'Get Started',
       isPopular: false,
     },
     {
       name: 'Pro',
-      monthlyPrice: '$49',
-      yearlyPrice: '$499',
+      monthlyPrice: '350Dh',
+      yearlyPrice: '3900Dh',
       features: [
         'Tout du plan Basic','Plans nutritionnels personnalisés','Suivi de l’hydratation','Rapports et analyses avancées','Intégration avec montres connectées','Support prioritaire par email'
       ],
@@ -46,8 +47,8 @@ const Pricing2 = () => {
     },
     {
       name: 'Enterprise',
-      monthlyPrice: '$99',
-      yearlyPrice: '$999',
+      monthlyPrice: '450Dh',
+      yearlyPrice: '4490Dh',
       features: [
       'Toutes les fonctionnalités Pro','Gestion multi-utilisateurs (clients, athlètes)','Tableau de bord en temps réel','Support 24/7 (chat & téléphone)','programmes d’entraînement','Intégration API & export des données'
       ],
@@ -146,7 +147,7 @@ const Pricing2 = () => {
                   <span className="price">
                     <AnimatedPrice price={isMonthly ? tier.monthlyPrice : tier.yearlyPrice} />
                   </span>
-                  <span className="period">/{isMonthly ? 'month' : 'year'}</span>
+                  <span className="period">/{isMonthly ? 'mois' : 'année'}</span>
                 </div>
                 <p className="description">
                   {tier.name === 'Basic' && 'For individuals and small teams getting started.'}
@@ -163,6 +164,7 @@ const Pricing2 = () => {
                     </li>
                   ))}
                 </ul>
+                <Link to="/PricingTable">
                 <button
                   className={`action-btn ${tier.isPopular ? 'popular-btn' : 'default-btn'}`}
                   whileHover={{ scale: 1.005 }}
@@ -170,6 +172,7 @@ const Pricing2 = () => {
                 >
                   {tier.buttonText}
                 </button>
+                </Link>
               </div>
             ))}
           </div>

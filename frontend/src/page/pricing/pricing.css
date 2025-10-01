@@ -451,7 +451,8 @@
 /* Action Button */
 .action-btn {
   margin-top: 25px;
-  display: inline-block;
+  display: block;      /* pour que ça s'étire */
+  width: 100%;         /* prend toute la largeur */
   padding: 14px 28px;
   border: none;
   border-radius: 50px;
@@ -466,8 +467,11 @@
   box-shadow: 0 6px 15px rgba(255, 30, 30, 0.4);
   position: relative;
   overflow: hidden;
+  text-align: center;  /* centrer le texte */
 }
-
+.card a{
+  text-decoration: none;
+}
 /* Effet spécial pour bouton populaire */
 .popular-btn {
   background: linear-gradient(135deg, #ff3b3b, #d40000);
