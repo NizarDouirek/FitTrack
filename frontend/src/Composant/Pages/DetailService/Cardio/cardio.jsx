@@ -36,10 +36,25 @@ export default function CardioPage() {
         <section className="cardio-section cards">
           <h2>Avantages</h2>
           <div className="cards-container">
-            <div className="cardcardio">❤️ Santé cardiovasculaire renforcée</div>
-            <div className="cardcardio">🔥 Brûle graisses et perte de poids</div>
-            <div className="cardcardio">⚡ Amélioration de l’endurance</div>
-          </div>
+  <div className="cardcardio">
+    <i className='bx bx-heart icon-card'></i>
+    <h3>Santé Cardiovasculaire</h3>
+    <p>Renforce ton cœur, améliore la circulation sanguine et réduit les risques de maladies.</p>
+  </div>
+
+  <div className="cardcardio">
+    <i className='bx bxs-hot icon-card'></i>
+    <h3>Brûle Graisses & Perte de Poids</h3>
+    <p>Un entraînement intensif qui stimule le métabolisme et favorise la combustion des graisses.</p>
+  </div>
+
+  <div className="cardcardio">
+    <i className='bx bx-run icon-card'></i>
+    <h3>Amélioration de l’Endurance</h3>
+    <p>Développe ta capacité à tenir sur la durée grâce à des exercices de haute intensité.</p>
+  </div>
+</div>
+
         </section>
 
         {/* Programme */}

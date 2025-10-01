@@ -42,6 +42,7 @@ export default function Header() {
               </span>
               <div className="dropdown-content">
                 <Link to="/Blog">Blog</Link>
+                <Link to="/Service">Service</Link>
                 <Link to="/faq">FAQ</Link>
                 <Link to="/team">Team</Link>
                 

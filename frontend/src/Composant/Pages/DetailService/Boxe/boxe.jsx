@@ -32,13 +32,33 @@ Ils permettent non seulement de brûler beaucoup de calories, mais aussi de dév
         {/* Avantages */}
         <section className="cardio-section cards">
           <h2>Avantages</h2>
-          <div className="cards-container">
-            <div className="cardcardio">🥊 Améliore la condition physique générale (force, vitesse, endurance)</div>
-            <div className="cardcardio">🔥 Brûle un maximum de calories et favorise la perte de poids</div>
-            <div className="cardcardio">🛡️ Renforce la confiance en soi et améliore la gestion du stress</div>
-            <div className="cardcardio">⚡ Travail complet : cardio + musculation fonctionnelle</div>
-          </div>
-        </section>
+         <div className="cards-container">
+  <div className="cardcardio">
+    <i className='bx bx-dumbbell icon-card'></i>
+    <h3>Condition Physique Optimale</h3>
+    <p>Développe la force, la vitesse et l’endurance avec des entraînements variés et efficaces.</p>
+  </div>
+
+  <div className="cardcardio">
+    <i className='bx bxs-hot icon-card'></i>
+    <h3>Brûle Calories & Perte de Poids</h3>
+    <p>Des exercices intensifs qui maximisent la dépense calorique et sculptent la silhouette.</p>
+  </div>
+
+  <div className="cardcardio">
+    <i className='bx bxs-shield-alt-2 icon-card'></i>
+    <h3>Confiance & Bien-être</h3>
+    <p>Améliore la gestion du stress, booste la confiance en soi et développe la discipline.</p>
+  </div>
+
+  <div className="cardcardio">
+<i class='bx bx-dumbbell icon-card'></i>
+    <h3>Entraînement Complet</h3>
+    <p>Un équilibre parfait entre cardio et musculation fonctionnelle pour un corps harmonieux.</p>
+  </div>
+</div>
+</section>
+
 
         {/* Programme */}
         <section className="cardio-section fade-incardio">

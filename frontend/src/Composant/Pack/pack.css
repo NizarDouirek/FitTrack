@@ -241,18 +241,19 @@ table tr:nth-child(odd) {
 
 /* Hover effect */
 .th1:hover {
-     background: linear-gradient(135deg, #b8a964 0%, #60efff 100%);
+     background: linear-gradient(135deg, #b8a96437 0%, #60efff30 100%),url('/public/bgfooter.jpg');
+     
   /* transform: translateY(-10px); */
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 .th2:hover {
-    background: linear-gradient(135deg, #ff0101 0%, #f7990b 100%);
+    background: linear-gradient(135deg, #ff01015a 0%, #f7990b61 100%),url('/public/bgfooter.jpg');
   /* transform: translateY(-10px); */
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 .th3:hover {
   /* transform: translateY(-10px); */
-   background: linear-gradient(135deg, #79604d 0%, #7defc9 100%);
+   background: linear-gradient(135deg, #79604d41 0%, #7defc946 100%),url('/public/bgfooter.jpg');
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 

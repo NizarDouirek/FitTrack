@@ -14,7 +14,7 @@ const PricingTable = () => {
   };
 
   const plans = [
-    { name: "STANDARD", price: "2599 DH", badge: "Populaire" ,
+    { name: "STANDARD", price: "25O DH", badge: "Populaire" ,
     support: "Free 3 Months Solutions Support",
     features: [
       { label: "Custom Website Design", included: true },
@@ -23,7 +23,7 @@ const PricingTable = () => {
       { label: "System Integration Support", included: false },
       { label: "24/7 Dedicated IT Assistance", included: false },
     ],},
-    { name: "PRO", price: "2999 DH", badge: "Recommandé",support: "Free 6 Months Solutions Support",
+    { name: "PRO", price: "350 DH", badge: "Recommandé",support: "Free 6 Months Solutions Support",
     features: [
       { label: "Custom Website Design", included: true },
       { label: "Priority Bug Fixes & Updates", included: true },
@@ -31,7 +31,7 @@ const PricingTable = () => {
       { label: "System Integration Support", included: true },
       { label: "24/7 Dedicated IT Assistance", included: false },
     ], },
-    { name: "PREMIUM", price: "5990 DH", badge: null,support: "Free 12 Months Solutions Support",
+    { name: "PREMIUM", price: "450 DH", badge: null,support: "Free 12 Months Solutions Support",
     features: [
       { label: "Custom Website Design", included: true },
       { label: "Priority Bug Fixes & Updates", included: true },

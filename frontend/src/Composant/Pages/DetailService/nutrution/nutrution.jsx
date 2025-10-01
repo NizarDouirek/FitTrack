@@ -36,12 +36,32 @@ export default function NutritionPage() {
         {/* Avantages */}
         <section className="nutrition-section cards">
           <h2>Avantages</h2>
-          <div className="cards-container">
-            <div className="cardnutrition">🥗 Optimisation des performances</div>
-            <div className="cardnutrition">⚡ Énergie constante au quotidien</div>
-            <div className="cardnutrition">💪 Atteinte plus rapide des objectifs</div>
-            <div className="cardnutrition">🧘 Meilleure santé globale</div>
-          </div>
+    <div className="cards-container">
+  <div className="cardnutrition">
+    <i className='bx bx-restaurant icon-card'></i>
+    <h3>Optimisation des Performances</h3>
+    <p>Adopte une alimentation équilibrée qui soutient tes efforts sportifs et maximise tes résultats.</p>
+  </div>
+
+  <div className="cardnutrition">
+    <i className='bx bx-bolt icon-card'></i>
+    <h3>Énergie Constante</h3>
+    <p>Bénéficie d’une énergie stable tout au long de la journée grâce à une nutrition adaptée.</p>
+  </div>
+
+  <div className="cardnutrition">
+    <i className='bx bx-dumbbell icon-card'></i>
+    <h3>Objectifs Atteints</h3>
+    <p>Accélère la progression et atteins plus rapidement tes objectifs sportifs et physiques.</p>
+  </div>
+
+  <div className="cardnutrition">
+    <i className='bx bx-health icon-card'></i>
+    <h3>Santé Globale</h3>
+    <p>Améliore ton bien-être général, renforce ton système immunitaire et préviens les carences.</p>
+  </div>
+</div>
+
         </section>
 
         {/* Exemple de programme nutrition */}

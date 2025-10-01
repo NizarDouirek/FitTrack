@@ -20,6 +20,7 @@ import PricingTable from './Composant/Pack/pack';
 import OffrePack from './Composant/Pack/offrepack';
 import Blog from './Composant/Blog/blog';
 import Team from './Composant/Team/team';
+import Service from './Composant/Service/service';
 
 function App() {
    return(
@@ -32,6 +33,7 @@ function App() {
             <Route path="/faq" element={ <FAQGym/>} />
             <Route path="/Blog" element={ <Blog/>} />
             <Route path="/Team" element={ <Team/>} />
+            <Route path="/Service" element={ <Service/>} />
             <Route path="/bmi" element={ <BMICalculator/>} />
             <Route path="/notfound" element={ <Notfound/>} />
             <Route path="/contact" element={ <Contact/>} />

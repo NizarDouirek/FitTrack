@@ -5,10 +5,10 @@
   margin-top: 40px;
 }
 .HeadFooter img {
-  height: 610px;
-  width: 800px;
-  margin-left: 30px;
-  margin-top: -300px;
+  height: 460px;
+  width: 450px;
+  margin-left: 50px;
+  margin-top: -200px;
 }
 .HeadFooter {
   /* background: url("/public/bgabout.webp"); */
@@ -19,32 +19,26 @@
   border-radius: 50px;
   width: 85%;
   margin-left: 100px;
-  height: 310px;
+  height: 260px;
   /* margin-bottom: 100px; */
   position: relative;
-  margin-top: 160px;
+  margin-top: 210px;
 }
 .contentHeadFooter {
   display: flex;
   justify-content: center;
-  /* gap: 2rem; */
+  gap: 4rem;
 }
 .lefthead {
   color: white;
 }
 .lefthead .p1Footer{
-  margin-top: 50px;
+  margin-top: 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 50px;
 }
 .lefthead .p2Footer {
-  background: linear-gradient(
-    40deg,
-    rgb(202, 182, 182),
-    white,
-    rgb(243, 194, 194),
-    rgb(255, 255, 255)
-  );
+  background-color: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 23px;

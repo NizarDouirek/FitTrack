@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="footer1">
         <div className="HeadFooter">
           <div className="contentHeadFooter">
-            <img src="fooo.webp" alt="" />
+            <img src="kifa.png" alt="" />
             <div className="lefthead">
               <p className="p1Footer">Prêt à commencer ?</p>
               <p className="p2Footer">

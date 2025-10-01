@@ -60,24 +60,75 @@
     font-size: 1.1rem;
     margin-top: 20px;
 }
-
-/* Avantages en cartes */
 .cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-}
-.cardforce {
-  background: #1a1a1a;
   padding: 20px;
-  border-radius: 15px;
- font-size: 1.3rem;
-  transition: transform 0.3s;
-}
-.cardforce:hover {
-  box-shadow: 0 0 15px rgba(213, 206, 206, 0.3);
-  transform: translateY(-10px);
 }
 
+.cardforce {
+  position: relative;
+  background-color: #282a2a;
+  border-radius: 10px;
+  padding: 28px 22px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  z-index: 0;
+}
+
+.cardforce::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background-image: linear-gradient(25deg, #09909a, #0ac7d8, #023035, #054044);
+  height: 52px;
+  width: 65px;
+  border-radius: 32px;
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+}
+
+.cardforce:hover::before {
+  transform: scale(21);
+}
+
+.cardforce h3 {
+  margin: 12px 0 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0ac7d8;
+}
+
+.cardforce p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.cardforce:hover p,
+.cardforce:hover h3 {
+  color: #000000;
+}
+
+.icon-card {
+  font-size: 2.2rem;
+  color: #0ac7d8;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.cardforce:hover .icon-card {
+  color: #fff;
+  transform: scale(1.2) rotate(5deg);
+}
+
+  
 /* Nutrition Highlight */
 .highlight {
   background: rgb(18, 18, 18);

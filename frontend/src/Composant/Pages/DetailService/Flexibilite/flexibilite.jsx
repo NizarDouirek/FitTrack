@@ -36,11 +36,31 @@ export default function Flexibilite() {
         <section className="flexibilite-section cards">
           <h2>Avantages</h2>
           <div className="cards-container">
-            <div className="cardflexibilite">🧘‍♂️ Amélioration de la souplesse et de la mobilité articulaire</div>
-            <div className="cardflexibilite">😌 Réduction du stress et relaxation profonde</div>
-            <div className="cardflexibilite">🛡️ Prévention des blessures et diminution des tensions musculaires</div>
-            <div className="cardflexibilite">💤 Amélioration du sommeil et du bien-être mental</div>
-          </div>
+  <div className="cardflexibilite">
+    <i className='bx bx-body icon-card'></i>
+    <h3>Souplesse & Mobilité</h3>
+    <p>Améliore la flexibilité et la mobilité articulaire grâce à des exercices ciblés.</p>
+  </div>
+
+  <div className="cardflexibilite">
+    <i className='bx bx-smile icon-card'></i>
+    <h3>Relaxation & Anti-Stress</h3>
+    <p>Réduit le stress et favorise une détente profonde après l’entraînement.</p>
+  </div>
+
+  <div className="cardflexibilite">
+    <i className='bx bxs-shield-alt-2 icon-card'></i>
+    <h3>Prévention des Blessures</h3>
+    <p>Diminue les tensions musculaires et protège les articulations contre les blessures.</p>
+  </div>
+
+  <div className="cardflexibilite">
+    <i className='bx bx-moon icon-card'></i>
+    <h3>Sommeil & Bien-être Mental</h3>
+    <p>Améliore la qualité du sommeil et favorise l’équilibre mental.</p>
+  </div>
+</div>
+
         </section>
 
         {/* Programme */}

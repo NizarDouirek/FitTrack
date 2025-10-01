@@ -1,0 +1,8 @@
+.Service{
+     height: 100vh;
+    background-image: url('/public/bgbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+
+}

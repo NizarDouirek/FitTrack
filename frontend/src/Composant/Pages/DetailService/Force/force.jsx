@@ -37,10 +37,25 @@ export default function ForcePage() {
         <section className="force-section cards">
           <h2>Avantages</h2>
           <div className="cards-container">
-            <div className="cardforce">💪 Augmentation de la masse musculaire</div>
-            <div className="cardforce">🦴 Amélioration de la posture</div>
-            <div className="cardforce">🛡️ Prévention des blessures</div>
-          </div>
+  <div className="cardforce">
+    <i className='bx bx-dumbbell icon-card'></i>
+    <h3>Masse Musculaire</h3>
+    <p>Stimule la croissance musculaire avec des exercices de résistance adaptés.</p>
+  </div>
+
+  <div className="cardforce">
+    <i className='bx bx-body icon-card'></i>
+    <h3>Amélioration de la Posture</h3>
+    <p>Renforce les muscles profonds pour un maintien naturel et une posture équilibrée.</p>
+  </div>
+
+  <div className="cardforce">
+    <i className='bx bxs-shield-alt-2 icon-card'></i>
+    <h3>Prévention des Blessures</h3>
+    <p>Protège les articulations et diminue les risques de blessures liées à l’effort.</p>
+  </div>
+</div>
+
         </section>
 
         {/* Programme */}
