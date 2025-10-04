@@ -63,34 +63,103 @@ export default function NutritionPage() {
 </div>
 
         </section>
-
-        {/* Exemple de programme nutrition */}
-        <section className="nutrition-section fade-in">
-          <h2>Exemple de programme alimentaire</h2>
-          <ol>
-            <li>🍳 Petit-déjeuner : Protéines + glucides complexes + fruits</li>
-            <li>🥩 Déjeuner : Protéines maigres + légumes + bonnes graisses</li>
-            <li>🍎 Collation : Fruits secs + yaourt nature</li>
-            <li>🥗 Dîner : Protéines + légumes + légumineuses</li>
-          </ol>
-        </section>
-
-        {/* Conseils clés */}
-        <section className="nutrition-section highlight">
-          <h2>Conseils clés</h2>
-            <p className="p1nutrition">
-             Pour obtenir les meilleurs résultats et maintenir une santé optimale, voici quelques recommandations essentielles à suivre au quotidien :
-            </p>
-          <p className="p2nutrition">
-            <b style={{color:"wheat"}}>Hydratation 💧</b> : buvez 2 à 3L d’eau par jour.
-            <br />
-            <b style={{color:"wheat"}}>Équilibre ⚖️</b> : associez protéines, glucides et lipides.
-            <br />
-            <b style={{color:"wheat"}}>Qualité 🥦</b> : privilégiez des aliments frais et naturels.
-            <br />
-            <b style={{color:"wheat"}}>Suivi 📊</b> : ajustez vos apports selon vos progrès.
+        
+<section className="nutrition-section">
+          <h2>Conseils Nutrition</h2>
+          <p className="nutrition-intro">
+            Pour des performances cardio optimales, adoptez une alimentation
+            riche en <strong>glucides complexes</strong>, en{" "}
+            <strong>protéines</strong> et restez toujours bien{" "}
+            <strong>hydraté</strong>.
           </p>
+
+          <div className="nutrition-container1">
+            <div className="nutrition-image1">
+              <img src="logoHe.webp" alt="Nutrition" />
+            </div>
+
+            <div className="nutrition-list1">
+              <div className="nutrition-item1">
+                <div className="nutrition-content">
+                  <h3>Équilibre ⚖️</h3>
+                  <p>associez protéines, glucides et lipides.</p>
+                </div>
+              </div>
+              <div className="nutrition-item1">
+                <div className="nutrition-content1">
+                  <h3>Qualité 🥦</h3>
+                  <p> privilégiez des aliments frais et naturels.</p>
+                </div>
+              </div>
+
+              
+ <div className="nutrition-item1">
+        {/* <i className="bx bx-bowl-hot nutrition-icon"></i> */}
+        <div className="nutrition-content">
+          <h3>Lipides sains 🥑</h3>
+          <p>Soutiennent la production d'hormones et la santé générale</p>
+        </div>
+      </div>
+              <div className="nutrition-item1">
+                <div className="nutrition-content">
+                  <h3>Électrolytes 🧂</h3>
+                  <p>Compensent les pertes dues à la transpiration intense.</p>
+                </div>
+              </div>
+
+              <div className="nutrition-item1">
+                <div className="nutrition-content">
+                  <h3>Eau 💧</h3>
+                  <p>Hydrate le corps et maintient les performances optimales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+
+        {/* Exemple de programme alimentaire */}
+<section className="prg">
+  <h2>Exemple de Programme Alimentaire</h2>
+  
+  <div className="program-cards-container fade-incardio">
+    <div className="program-card">
+      <span className="program-step">Matin 🌅</span>
+      <i className="bx bx-coffee program-icon"></i>
+      <h3>Petit-déjeuner</h3>
+      <p>Protéines + glucides complexes + fruits pour bien commencer la journée.</p>
+    </div>
+
+    <div className="program-card">
+      <span className="program-step">Midi ☀️</span>
+      <i className="bx bx-restaurant program-icon"></i>
+      <h3>Déjeuner</h3>
+      <p>Protéines maigres + légumes + bonnes graisses pour un repas équilibré et nourrissant.</p>
+    </div>
+
+    <div className="program-card">
+      <span className="program-step">Goûter 🍎</span>
+      <i className="bx bx-apple program-icon"></i>
+      <h3>Collation</h3>
+      <p>Fruits secs + yaourt nature pour garder de l’énergie avant le dîner.</p>
+    </div>
+
+    <div className="program-card">
+      <span className="program-step">Soir 🌙</span>
+      <i className="bx bx-bowl-hot program-icon"></i>
+      <h3>Dîner</h3>
+      <p>Protéines + légumes + légumineuses pour une digestion légère et une bonne récupération.</p>
+    </div>
+  </div>
+
+  <div className="program-progress">
+    <div className="progress-dot active"></div>
+    <div className="progress-dot"></div>
+    <div className="progress-dot"></div>
+    <div className="progress-dot"></div>
+  </div>
+</section>
+
+        
 
         {/* Vidéo explicative */}
         <section className="nutrition-section video">

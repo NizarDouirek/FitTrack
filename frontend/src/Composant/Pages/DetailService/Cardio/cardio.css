@@ -1,122 +1,158 @@
-
 .cardio-container {
-  font-family: "Roboto", sans-serif;
-  color: #f5f5f5;
-  background: #0a0a0a;
-  padding-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  /* background: linear-gradient(180deg, #000000 0%, #1a1a1a 50%, #0e0d0d 100%); */
+  padding-bottom: 50px;
+  background-color: black;
+  min-height: 100vh;
 }
 
+/* Hero amélioré */
 .cardio-hero {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 85vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardio-hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+  filter: brightness(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .cardio-hero-text {
-  position: absolute;
-  bottom: 20%;
-  left: 10%;
+   position: relative;
+  z-index: 1;
+  text-align: center;
   color: #fff;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  /* max-width: 90%; */
 }
 
+
+
 .cardio-hero-text h1 {
-  font-size: 3rem;
-  font-family: 'Courier New', Courier, monospace;
-  color: #e60000;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: 'Futura', Arial, sans-serif;
+    color: black;
+    text-shadow: 
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+    letter-spacing: 2px;
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+  to {
+    text-shadow: 0 0 15px #ff3333, 0 0 30px #ff3333;
+  }
 }
 
 .cardio-hero-text p {
   font-size: 1.5rem;
   font-weight: 300;
+  letter-spacing: 2px;
 }
 
-/* ---------------------- */
-/*   Sections générales   */
-/* ---------------------- */
+/* Sections améliorées */
 .cardio-section {
-    margin-top: 40px;
-  padding: 60px;
-  
+  margin-top: 60px;
+  padding: 80px 60px;
+  position: relative;
 }
-.cardio-section p {
-  font-family: 'Montserrat', sans-serif;
 
+.cardio-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
 }
+
 .cardio-section h2 {
-  color: #e60000;
+  color: #fff;
   font-family: 'Courier New', Courier, monospace;
-  margin-bottom: 20px;
-  font-size: 2rem;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
 }
 
-.cardio-section p,
-.cardio-section ol,
-.cardio-section ul {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  
-    font-family: 'Montserrat', sans-serif;
-}
-
-.highlight {
-background: rgb(18, 18, 18);
- 
-
-  padding: 20px;
+.cardio-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #0ac7d8;
 }
 
 .p1cardio {
   font-size: 1.3rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #e5e5e5;
 }
 
 .p2cardio {
   display: inline-block;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 1.1rem;
-    margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  font-size: 1.1rem;
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  line-height: 1.7;
 }
 
-/* ---------------------- */
-/*   Vidéo                */
-/* ---------------------- */
-.video iframe {
-  border-radius: 12px;
-  margin-top: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+.p2cardio:hover {
+  border-color: rgba(230, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
 }
 
-
-.cta {
-  text-align: center;
-  margin-top: 40px;
-}
+/* Cards améliorées (sans changer le design existant) */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cardcardio {
   position: relative;
-  background-color: #282a2a;
-  border-radius: 10px;
-  padding: 28px 22px;
+  background: linear-gradient(145deg, #282a2a, #1e2020);
+  border-radius: 15px;
+  padding: 35px 25px;
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 0;
 }
 
@@ -131,7 +167,11 @@ background: rgb(18, 18, 18);
   width: 65px;
   border-radius: 32px;
   transform: scale(1);
-  transition: transform 0.5s ease-out;
+  transition: transform 0.6s ease-out;
+}
+
+.cardcardio:hover {
+  transform: translateY(-10px) scale(1.02);
 }
 
 .cardcardio:hover::before {
@@ -139,16 +179,18 @@ background: rgb(18, 18, 18);
 }
 
 .cardcardio h3 {
-  margin: 12px 0 8px;
-  font-size: 1.2rem;
+  margin: 15px 0 12px;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #0ac7d8;
+  transition: color 0.3s ease;
 }
 
 .cardcardio p {
-  font-size: 0.95rem;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #ffffff;
+  transition: color 0.3s ease;
 }
 
 .cardcardio:hover p,
@@ -157,14 +199,733 @@ background: rgb(18, 18, 18);
 }
 
 .icon-card {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #0ac7d8;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: all 0.4s ease;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 10px rgba(10, 199, 216, 0.5));
 }
 
 .cardcardio:hover .icon-card {
   color: #fff;
+  transform: scale(1.3) rotate(10deg);
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+}
+
+/* Programme amélioré */
+.prg {
+  padding: 60px 20px;
+  background:  url('/public/bgbg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.prg h2 {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cardio-program {
+  background: linear-gradient(145deg, #0a0a0a, #151515);
+  border: 2px solid rgba(10, 199, 216, 0.3);
+  border-radius: 20px;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 850px;
+  color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cardio-program:hover {
+  border-color: rgba(10, 199, 216, 0.6);
+}
+
+.cardio-program::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 180deg,
+    transparent,
+    rgba(10, 199, 216, 0.1),
+    transparent
+  );
+  animation: rotate-glow 8s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate-glow {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cardio-program ol {
+  list-style: none;
+  counter-reset: prog-counter;
+  padding-left: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.cardio-program li {
+  counter-increment: prog-counter;
+  margin: 20px 0;
+  padding: 20px 25px;
+  background: rgba(40, 40, 40, 0.6);
+  border-left: 4px solid #0ac7d8;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.cardio-program li::before {
+  content: "⚡ " counter(prog-counter) ". ";
+  color: #0ac7d8;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.cardio-program li:hover {
+  transform: translateX(15px);
+  background: rgba(50, 50, 50, 0.8);
+  border-left-color: #fff;
+}
+
+/* Section Highlight améliorée */
+.highlight {
+  background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+  border-radius: 20px;
+  padding: 60px 40px;
+  margin: 60px auto;
+  max-width: 900px;
+  border: 1px solid rgba(230, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.highlight:hover {
+  border-color: rgba(230, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.highlight h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Courier New', monospace;
+}
+
+.highlight .p1cardio {
+  font-size: 1.2rem;
+  color: #e5e5e5;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.highlight .p2cardio {
+  background: linear-gradient(135deg, #1b1b1b 0%, #252525 100%);
+  border-left: 4px solid #fff;
+  border-radius: 15px;
+  padding: 30px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #f0f0f0;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.highlight .p2cardio:hover {
+  background: linear-gradient(135deg, #252525 0%, #2d2d2d 100%);
+  transform: translateY(-3px);
+}
+
+.highlight .p2cardio b {
+  color: #ffb347;
+  text-shadow: 0 2px 5px rgba(255, 179, 71, 0.3);
+}
+
+/* Vidéo améliorée */
+.video {
+  text-align: center;
+}
+
+.video iframe {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.dsp{
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+}
+.dsp img{
+  width: 500px;
+  height: 500px;
+}
+/* CTA amélioré */
+.cta {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px;
+}
+
+.cta button {
+  background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+  color: #000;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(230, 0, 0, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.cta button:hover::before {
+  left: 100%;
+}
+
+.cta button:hover {
+  background: linear-gradient(135deg, #fff 0%, #ff3333 100%);
+  color: #fff;
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* Animations améliorées */
+.fade-incardio {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cardio-hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .cardio-section {
+    padding: 40px 20px;
+  }
+  
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .cardio-program {
+    padding: 30px 20px;
+  }
+  
+  .highlight {
+    padding: 40px 20px;
+  }
+}
+/* NOUVELLE SECTION PROGRAMME AVEC CARTES */
+.prg {
+  padding: 60px 20px;
+  background: url('/public/bgbg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.prg h2 {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.program-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.program-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.program-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(10, 199, 216, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.program-card:hover::before {
+  left: 100%;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(10, 199, 216, 0.5);
+  /* box-shadow: 0 15px 40px rgba(10, 199, 216, 0.2); */
+}
+
+.program-icon {
+  font-size: 4rem;
+  color: #0ac7d8;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+  display: block;
+}
+
+.program-card:hover .program-icon {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+.program-card h3 {
+  font-size: 1.5rem;
+  color: #0ac7d8;
+  margin-bottom: 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.program-card:hover h3 {
+  color: #000000;
+}
+
+.program-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin: 0;
+}.nutrition-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #000; /* Noir pur */
+  color: #fff;
+  position: relative;
+}
+
+.nutrition-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Rouge vif */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nutrition-intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.nutrition-container1 {
+  position: relative;
+  width: 800px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.nutrition-image1 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.nutrition-image1 img {
+  width: 280px; /* Image plus grande */
+  height: 280px;
+ 
+}
+
+/* Liste circulaire */
+.nutrition-list1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.nutrition-item1 {
+  position: absolute;
+  width: 320px;  /* Items plus larges */
+  padding: 20px;
+  background: rgba(255, 0, 0, 0.1); /* Fond rouge très léger */
+  border: 2px solid #ff0000; /* Bordure rouge */
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.nutrition-icon {
+  font-size: 2.2rem;
+  color: #ff0000;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.nutrition-content1 h3,
+.nutrition-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.nutrition-content1 p,
+.nutrition-content p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Placement circulaire (5 éléments) */
+.nutrition-item1:nth-child(1) { top: 2%; left: 50%; transform: translate(-50%, 0); }
+.nutrition-item1:nth-child(2) { top: 32%; left: 93%; transform: translate(-50%, -50%); }
+.nutrition-item1:nth-child(3) { top: 58%; left: 80%; transform: translate(-50%, -50%); }
+.nutrition-item1:nth-child(4) { top:58%; left: 20%; transform: translate(-50%, -50%); }
+.nutrition-item1:nth-child(5) { top: 32%; left: 7%; transform: translate(-50%, -50%); }
+
+
+/* Section Programme améliorée */
+.prg {
+  /* padding: 80px 20px; */
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.413) 0%, rgba(20, 20, 20, 0.567) 100%),url('/public/bgbg.png');
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+
+
+.prg h2 {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.prg h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #0ac7d8;
+  border-radius: 2px;
+}
+
+/* Conteneur des cartes de programme amélioré */
+.program-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+/* Carte de programme améliorée */
+.program-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 50px 35px;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.program-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(10, 199, 216, 0.1), transparent);
+  transition: left 0.8s ease;
+}
+
+.program-card:hover::before {
+  left: 100%;
+}
+
+.program-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(10, 199, 216, 0.3), rgba(230, 0, 0, 0.3));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: subtract;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.program-card:hover::after {
+  opacity: 1;
+}
+
+.program-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(10, 199, 216, 0.3);
+}
+
+/* Icônes de programme améliorées */
+.program-icon {
+  font-size: 5rem;
+  margin-bottom: 25px;
+  display: block;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.program-card:nth-child(1) .program-icon {
+  color: #f3ff6b; 
+  background: linear-gradient(135deg, #faff6b, #8effc1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.program-card:nth-child(2) .program-icon {
+  color: #4ecdc4;
+  background: linear-gradient(135deg, #4e8dcd, #66c5e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.program-card:nth-child(3) .program-icon {
+  color: #45b7d1;
+  background: linear-gradient(135deg, #45b7d1, #67c9e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.program-card:hover .program-icon {
   transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+}
+
+/* Titres des cartes */
+.program-card h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.program-card:hover h3 {
+  color: #0ac7d8;
+}
+
+.program-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: #0ac7d8;
+  border-radius: 1px;
+  transition: width 0.3s ease;
+}
+
+.program-card:hover h3::after {
+  width: 80px;
+}
+
+/* Description des cartes */
+.program-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e5e5e5;
+  margin: 0;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.program-card:hover p {
+  opacity: 1;
+}
+
+/* Badge d'étape */
+.program-step {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #e60000, #ff3333);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.program-card:hover .program-step {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.program-card:nth-child(1) .program-step { background: linear-gradient(135deg, #000000, #8effbd); }
+.program-card:nth-child(2) .program-step { background: linear-gradient(135deg, #000, #66e0d6); }
+.program-card:nth-child(3) .program-step { background: linear-gradient(135deg, #000, #67c9e0); }
+
+/* Animation d'apparition séquentielle */
+.program-card {
+  animation: cardSlideIn 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.program-card:nth-child(1) { animation-delay: 0.1s; }
+.program-card:nth-child(2) { animation-delay: 0.3s; }
+.program-card:nth-child(3) { animation-delay: 0.5s; }
+
+@keyframes cardSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Indicateur de progression */
+.program-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+
+
+
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .prg {
+    padding: 60px 15px;
+  }
+  
+  .prg h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .program-cards-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 10px;
+  }
+  
+  .program-card {
+    padding: 35px 25px;
+  }
+  
+  .program-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .program-card h3 {
+    font-size: 1.4rem;
+  }
+  
+  .program-card p {
+    font-size: 1rem;
+  }
+}
+
+/* Effet de brillance au survol */
+.program-card:hover {
+  box-shadow: 
+    0 20px 40px rgba(10, 199, 216, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
 }

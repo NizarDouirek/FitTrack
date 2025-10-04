@@ -57,39 +57,101 @@ export default function ForcePage() {
 </div>
 
         </section>
+ 
+        
 
-        {/* Programme */}
-        <section className="force-section fade-inforce">
-          <h2>Programme type</h2>
-          <ol>
-            <li>🔥 Échauffement : 10 min cardio léger</li>
-            <li>🏋️‍♂️ Exercices principaux : Squats, Deadlifts, Développé couché, 
-              Kettlebell swings
-            </li>
-            <li>🧘‍♂️ Étirements de récupération</li>
-          </ol>
-        </section>
+        <section className="nutrition-section">
+  <h2 >Conseils Nutrition</h2>
+  <p className="nutrition-intro">
+    Pour maximiser vos résultats, privilégiez une alimentation riche en
+    <strong> protéines</strong>, complétez avec de la{" "}
+    <strong>créatine</strong> et maintenez une alimentation{" "}
+    <strong>équilibrée</strong>.
+  </p>
 
-        {/* Nutrition */}
-        <section className="force-section highlight">
-          <h2>Conseils nutrition</h2>
-          <p className="p1force">
-            Pour maximiser vos résultats, privilégiez une alimentation riche en
-            <strong> protéines</strong>, complétez avec de la{" "}
-            <strong>créatine</strong> et maintenez une alimentation{" "}
-            <strong>équilibrée</strong>.
-          </p>
-          <p className="p2force"><b style={{color:'wheat'}}>Protéines 🥩 </b>: favorisent la réparation et la croissance musculaire.
-<br />
-<b style={{color:'wheat'}}>Créatine ⚡</b> : booste la force et accélère la récupération.
-<br />
-<b style={{color:'wheat'}}>Glucides complexes 🍚</b> : fournissent une énergie durable pour l’entraînement.
-<br />
-<b style={{color:'wheat'}}>Lipides sains 🥑 </b>: soutiennent la production d’hormones et la santé générale.
-<br />
-<b style={{color:'wheat'}}>Hydratation & équilibre 💧</b> : indispensables pour prévenir la fatigue et optimiser les résultats.</p>
-        </section>
+  <div className="nutrition-container1">
+    {/* Image gauche */}
+    <div className="nutrition-image1">
+      <img src="logoHe.webp" alt="Nutrition" />
+    </div>
 
+    {/* Liste droite */}
+    <div className="nutrition-list1">
+      <div className="nutrition-item1">
+        {/* <i className="bx bx-beef nutrition-icon"></i> */}
+        <div className="nutrition-content1">
+          <h3>Protéines 🥩</h3>
+          <p>Favorisent la réparation et la croissance musculaire</p>
+        </div>
+      </div>
+
+      <div className="nutrition-item1">
+        {/* <i className="bx bx-bolt-circle nutrition-icon"></i> */}
+        <div className="nutrition-content">
+          <h3>Créatine ⚡</h3>
+          <p>Booste la force et accélère la récupération</p>
+        </div>
+      </div>
+
+      <div className="nutrition-item1">
+        {/* <i className="bx bx-bowl-rice nutrition-icon"></i> */}
+        <div className="nutrition-content">
+          <h3>Glucides complexes 🍚</h3>
+          <p>Fournissent une énergie durable pour l'entraînement</p>
+        </div>
+      </div>
+
+      <div className="nutrition-item1">
+        {/* <i className="bx bx-bowl-hot nutrition-icon"></i> */}
+        <div className="nutrition-content">
+          <h3>Lipides sains 🥑</h3>
+          <p>Soutiennent la production d'hormones et la santé générale</p>
+        </div>
+      </div>
+
+      <div className="nutrition-item1">
+        {/* <i className="bx bx-water nutrition-icon"></i> */}
+        <div className="nutrition-content">
+          <h3>Hydratation 💧</h3>
+          <p>Indispensable pour prévenir la fatigue et optimiser les résultats</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Programme */}
+<section className="prg">
+  <h2>Programme Type</h2>
+  <div className="program-cards-container fade-inforce">
+    <div className="program-card">
+      <span className="program-step">Étape 1</span>
+      <i className='bx bx-run program-icon'></i>
+      <h3>Échauffement Dynamique</h3>
+      <p>10 minutes de cardio léger pour augmenter la température corporelle et préparer vos muscles à l'effort intense.</p>
+    </div>
+    
+    <div className="program-card">
+      <span className="program-step">Étape 2</span>
+      <i className='bx bx-dumbbell program-icon'></i>
+      <h3>Exercices de Force</h3>
+      <p>Squats, Deadlifts, Développé couché et Kettlebell swings pour développer la puissance et l'endurance musculaire.</p>
+    </div>
+    
+    <div className="program-card">
+      <span className="program-step">Étape 3</span>
+      <i className='bx bx-body program-icon'></i>
+      <h3>Récupération Active</h3>
+      <p>Étirements profonds et exercices de mobilité pour optimiser la récupération et prévenir les blessures.</p>
+    </div>
+  </div>
+  
+  <div className="program-progress">
+    <div className="progress-dot active"></div>
+    <div className="progress-dot"></div>
+    <div className="progress-dot"></div>
+  </div>
+</section>
         {/* Vidéo explicative */}
         <section className="force-section video">
           <h2>Comment s’entraîner avec haltérophilie et kettlebell?</h2>

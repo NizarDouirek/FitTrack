@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../Header/header";
 import './service.css'
 import Footer from "../Footer/footer";
+import Pricing2 from "../../page/pricing/pricing";
 export default function Service(){
       const items = [
   {
@@ -159,6 +160,7 @@ export default function Service(){
           </div>
         </div>
       </div>
+      <Pricing2/>
       <Footer/>
       </div>
       </div>
