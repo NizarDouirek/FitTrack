@@ -167,3 +167,25 @@ nav a:hover {
 .dropdown .dropbtn:active {
   color: white; /* il ne change plus de couleur au clic */
 }
+
+
+/* ============================= */
+/* HEADER GLOBAL RESPONSIVE */
+/* ============================= */
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: space-between; /* espace entre logo et burger */
+    padding: 0 20px;
+    gap: 0; /* enlever gap trop large */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 115px; /* espace entre logo et texte ou autre élément à l’intérieur */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

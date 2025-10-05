@@ -370,3 +370,51 @@ table tr:nth-child(odd) {
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(59, 130, 246, 0.4);
 } */
+/* ========== VERSION MOBILE ========== */
+@media (max-width: 768px) {
+  .pricing-container h1 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .pricing-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto; /* scroll horizontal si besoin */
+    border-spacing: 0;
+  }
+
+  /* Les colonnes restent mais s’ajustent */
+  .pricing-table th,
+  .pricing-table td {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  /* Le thead reste visible mais plus compact */
+  .pricing-table thead th {
+    display: table-cell;
+    font-size: 1rem;
+    width: auto;
+  }
+
+  /* Empêcher les colonnes de se tasser trop */
+  .pricing-table th, .pricing-table td {
+    min-width: 130px;
+  }
+
+  /* Boutons plus petits */
+  .btnplan,
+  .th1 button,
+  .th2 button,
+  .th3 button {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  /* Centrer le tableau sur mobile */
+  .pricing-container {
+    padding: 0 0.5rem;
+  }
+}
